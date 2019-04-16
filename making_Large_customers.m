@@ -137,7 +137,7 @@ for i = 1:LoadsN
     end
     
     if (length(low_voltage_nodes)>0)
-        element_index= find(strcmp(low_voltage_nodes(:,1),nodes(i)));
+        element_index= find(strcmp(low_voltage_nodes(:,1),LDSect_Node(i,3)));
     else
         element_index=[];
     end

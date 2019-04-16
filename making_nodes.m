@@ -48,7 +48,7 @@ node_numbers = 1:length(Node_names);
 %     index_from = find(strcmp(Node_names,Node_from_to_modified(i,1)));
 %     node_numbering(i,1) = node_numbers(index_from);
 %     index_to = find(strcmp(Node_names,Node_from_to_modified(i,2)));
-%     node_numbering(i,2) = node_numbers(index_to);
+%     node_numbering(i,2) = node_numbers(index_to);assads
 % end
 % G1 = digraph(node_numbering(:,1),node_numbering(:,2));
 p = plot(G,'NodeLabel',G.Nodes.Name,'Layout','force');
@@ -67,18 +67,36 @@ for i = 1:length(Index)
     low_voltage_nodes(:,1) = [low_voltage_nodes;SecFromTo_modified(Index(i),5);downstream_nodes];
     low_voltage_nodes_volt(:,1)= [low_voltage_nodes_volt;cell2mat(low_voltage);cell2mat(low_voltage)*ones(length(downstream_nodes),1)];
 end
+
 highlight(p,low_voltage_nodes,'NodeColor','g');
 %% Back to making Nodes
-from_to_node=[Node_feeder_text(2:end,3);Node_feeder_text(2:end,4)];
-from_to_node_phase=[Node_feeder_text(2:end,5);Node_feeder_text(2:end,5)];
+phase_to_node = Node_feeder_text(:,5);
+phase_from_node = Node_feeder_text(:,5);
+for n = 2:size(Node_feeder_text,1)
+    to_node = Node_feeder_text(n,4);
+    index_to_node = find(strcmp(Node_feeder_text(1:end,4),to_node)==1);
+    if (length(index_to_node)>1)
+        str = strings;
+        for k = 1:length(index_to_node)
+            str = strcat(str,Node_feeder_text(index_to_node(k),5));
+        end
+        new_phase = sort(unique(char(str)));
+        phase_to_node(index_to_node,1) = cellstr(new_phase);       
+    end
+end
 
+   
+
+from_to_node=[Node_feeder_text(2:end,3);Node_feeder_text(2:end,4)];
+from_to_node_phase=[phase_from_node(2:end,1);phase_to_node(2:end,1)];
 
 [only_nodes, only_rows, ic] = unique(from_to_node);
+
 %phase=from_to_node_phase(only_rows);
  
 for i=1:length(only_nodes)
     k=2;
-    for j=1:length(from_to_node);
+    for j=1:length(from_to_node)
         if strcmp(cellstr(only_nodes(i)),cellstr(from_to_node(j)))
             node_info(i,1)=only_nodes(i,1);
             node_info(i,k)=from_to_node_phase(j);
@@ -218,7 +236,7 @@ for i = 1:length(nodes_new)
     fprintf (fid,'\t phases %s;\n',strrep(char(phase_new(i)),' ',''));
     
     if (length(low_voltage_nodes)>0)
-        element_index= find(strcmp(low_voltage_nodes(:,1),nodes(i)));
+        element_index= find(strcmp(low_voltage_nodes(:,1),nodes_new(i)));
     else
         element_index=[];
     end

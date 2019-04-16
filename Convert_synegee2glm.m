@@ -2,7 +2,7 @@
 clc
 clearvars
 
-Feedername = 'TUR115'
+Feedername = 'TUR117'
 NonimalVolt=7970;
 
 %% setting up connection with SynerGEE DataBase

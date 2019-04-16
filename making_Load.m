@@ -133,7 +133,7 @@ for i = 1:LoadsN
     fprintf (fid,'\t impedance_fraction_C %.2f;\n',LD_ZIP(i,1));
     
     if (length(low_voltage_nodes)>0)
-        element_index= find(strcmp(low_voltage_nodes(:,1),nodes(i)));
+        element_index= find(strcmp(low_voltage_nodes(:,1),LDSect_Node(i,3)));
     else
         element_index=[];
     end
