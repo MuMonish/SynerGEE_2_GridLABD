@@ -136,6 +136,8 @@ if size(BreakerMatrix,1) > 0
     BreakerSect_Node(:,1)=BreakerSectionID;
     BreakerSect_Node(:,5)=BreakerText(2:end,44);
     Breaker_UniqID=BreakerText(2:end,2);
+    % Set breaker status
+    BreakerStatus=BreakerMatrix(:,45); % Column 45 is 1 if open
     % Make sure each Breaker_uniqID is unique
     if length(Breaker_UniqID) > length(unique(Breaker_UniqID))
         for i = 1:length(Breaker_UniqID)
@@ -304,6 +306,9 @@ if size(BreakerMatrix,1) > 0
         fprintf(fid,'\t to %s;\n', char(BreakerSect_Node(i,5)));
         fprintf(fid,'\t retry_time 1s;\n');
         fprintf(fid,'\t max_number_of_tries 3;\n');
+        if BreakerStatus(i) == 1
+            fprintf(fid,'\t status OPEN;\n');
+        end
         fprintf(fid,'}\n\n\n');
         
     end
