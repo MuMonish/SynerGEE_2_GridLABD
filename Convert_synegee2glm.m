@@ -133,7 +133,8 @@ conn = database('Warehouse','','');
 selectquery = 'SELECT * FROM DevConductors';
 curs = exec(conn,selectquery)
 curs = fetch(curs)
-conductors_config = curs.Data;
+conductors_config_new = curs.Data;
+conductors_config = [num2cell(1:size(conductors_config_new,1))' conductors_config_new];
 %% Query for Regulator Config
 selectquery = 'SELECT * FROM DevRegulators';
 curs = exec(conn,selectquery)

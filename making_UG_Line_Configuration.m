@@ -6,7 +6,7 @@ function Make_UG_Line_Configuration=making_UG_Line_Configuration(dir_name,Feeder
 
 %load('Feeder_UG_lines.mat');
 load(strcat(FeederName,'_Feeder_UG_lines.mat'));
-[Conductor_Data,Conductor_type]=xlsread('conductor_warehouse');
+[Conductor_Data,Conductor_type]=xlsread(strcat(dir_name,'\','conductor_warehouse.xlsx'));
 
 Conductor_type(2:end,1)=num2cell(Conductor_Data(:,1));
 Conductor_type(2:end,4:13)=num2cell(Conductor_Data(:,4:13));

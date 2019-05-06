@@ -5,7 +5,7 @@ function  [contains_UG] =sorting_line_OH_UG(dir_name,FeederName)
 % load('SectionFromTo.mat');
 load(strcat(FeederName,'_SectionFromTo.mat'));
 [Node_feeder,Node_feeder_text]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
-[Conductor_Data,Conductor_type]=xlsread('conductor_warehouse');
+[Conductor_Data,Conductor_type]=xlsread(strcat(dir_name,'\','conductor_warehouse.xlsx'));
 
 Node_feeder_text(1,:)=[];
 Node_feeder_text(:,9:26)=num2cell(Node_feeder(:,1:18));
