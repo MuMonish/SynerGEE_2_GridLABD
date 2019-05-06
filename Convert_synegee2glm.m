@@ -3,6 +3,7 @@ clc
 clearvars
 
 Feedername = 'TUR117'
+Feedername = 'SPU124'
 NonimalVolt=7970;
 
 %% setting up connection with SynerGEE DataBase
@@ -14,6 +15,7 @@ InstSection = curs.Data;
 %InstSection = select(conn,selectquery);
 InstSection(1:20,:);
 row = find(strcmp(InstSection(:,2),Feedername));
+row = strcmp(InstSection(:,2),Feedername);
 feeder_Section = InstSection(row,:);
 feeder_Section(:,5) = strrep(feeder_Section(:,5),' ','');
 feeder_nodes = unique(cat(1,feeder_Section(:,3),feeder_Section(:,4)));
