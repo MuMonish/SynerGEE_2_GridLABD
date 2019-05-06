@@ -1,0 +1,43 @@
+//**Breakers_TUR115:
+
+
+object recloser {
+	 name recloser_Breaker Recloser1;
+	 phases "ABCN";
+	 from 500-2822450;
+	 to Breaker_392-96374;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser2;
+	 phases "ABCN";
+	 from 500-2822436;
+	 to Breaker_392-96694;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser3;
+	 phases "ABC";
+	 from 406-1262796;
+	 to Breaker_392-106295;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_392-93179;
+	 phases "ABCN";
+	 from TUR115;
+	 to Breaker_416-74596;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+

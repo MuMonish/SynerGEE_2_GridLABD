@@ -1,0 +1,26 @@
+//**Transformers_SPU124:
+
+
+object transformer_configuration {
+	 name Xfmr_Config_81;
+	 connect_type DELTA_GWYE;
+	 install_type PADMOUNT;
+	 primary_voltage 4.399409e+03;
+	 secondary_voltage 1.385641e+03;
+	 power_rating 250;
+	 impedance 3.760000e-03+1.400000e-02j;
+	 no_load_loss 8.000000e-01;
+}
+
+
+
+object transformer  {
+	 name Trafo_415-1194084;
+	 phases ABCN;
+	 from 500-1889727;
+	 to Xfmr_391-1749449;
+	 configuration Xfmr_Config_81;
+}
+
+
+//**End Transformers_SPU124** 

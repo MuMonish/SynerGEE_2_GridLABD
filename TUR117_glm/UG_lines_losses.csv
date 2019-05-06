@@ -1,0 +1,10 @@
+# file...... UG_lines_losses.csv
+# date...... Fri May 03 14:50:31 2019
+# user...... Nathan Gray
+# host...... (null)
+# group..... class=underground_line
+# trigger... (none)
+# interval.. -1
+# limit..... 0
+# property.. timestamp,sum(power_losses.real)
+2019-05-03 14:27:49 PDT,+7537.59

@@ -1,0 +1,46 @@
+//**Fuses_TUR115:
+
+
+object fuse {
+	 name FUSEs_402-1375944;
+	 phases "ABN";
+	 from 403-181883;
+	 to Fuse_402-1375944;
+	 current_limit 1000 A;
+	 mean_replacement_time 360 ;
+	 phase_A_status GOOD;
+	 phase_B_status GOOD;
+	 phase_C_status GOOD;
+	 repair_dist_type NONE;
+}
+
+
+object fuse {
+	 name FUSEs_402-1375942;
+	 phases "ABCN";
+	 from 500-2822450;
+	 to Fuse_402-1375942;
+	 current_limit 1000 A;
+	 mean_replacement_time 360 ;
+	 phase_A_status GOOD;
+	 phase_B_status GOOD;
+	 phase_C_status GOOD;
+	 repair_dist_type NONE;
+}
+
+
+object fuse {
+	 name FUSEs_402-1375943;
+	 phases "ABCN";
+	 from 500-2822436;
+	 to Fuse_402-1375943;
+	 current_limit 1000 A;
+	 mean_replacement_time 360 ;
+	 phase_A_status GOOD;
+	 phase_B_status GOOD;
+	 phase_C_status GOOD;
+	 repair_dist_type NONE;
+}
+
+
+//**End Fuses_TUR115** 

@@ -2,7 +2,7 @@
 clc
 clearvars
 
-Feedername = 'SPU124'
+Feedername = 'SPU125'
 NonimalVolt=7970;
 
 %% setting up connection with SynerGEE DataBase

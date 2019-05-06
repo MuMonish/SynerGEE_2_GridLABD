@@ -1,0 +1,53 @@
+//**Breakers_SPU125:
+
+
+object recloser {
+	 name recloser_392-31703;
+	 phases "ABCN";
+	 from SPU125;
+	 to Breaker_416-32980;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_recloser_Breaker Recloser_SPU125_2;
+	 phases "ABCN";
+	 from 403-470566;
+	 to Breaker_392-89014;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_recloser_Breaker Recloser_SPU125_2;
+	 phases "ABCN";
+	 from 500-712882;
+	 to Breaker_392-89655;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_recloser_Breaker Recloser_SPU125_2;
+	 phases "ABC";
+	 from 406-905990;
+	 to Breaker_392-106294;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_recloser_Breaker Recloser_SPU125_2;
+	 phases "ABC";
+	 from 392-106294;
+	 to Breaker_392-106314;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+

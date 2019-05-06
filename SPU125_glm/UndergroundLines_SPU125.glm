@@ -1,0 +1,57 @@
+//**Underground Lines forSPU125:
+
+
+object underground_line {
+	 name 394-1053215;
+	 phases AN;
+	 from 396-67860;
+	 to 500-933238;
+	 length 10.000000;
+	 configuration underground_line_config_AN_128_128;
+	 } 
+
+object underground_line {
+	 name 394-1053216;
+	 phases BN;
+	 from 396-67860;
+	 to 500-933240;
+	 length 10.000000;
+	 configuration underground_line_config_BN_128_128;
+	 } 
+
+object underground_line {
+	 name 394-1053217;
+	 phases CN;
+	 from 396-67860;
+	 to 500-933242;
+	 length 10.000000;
+	 configuration underground_line_config_CN_128_128;
+	 } 
+
+object underground_line {
+	 name 411-908050-0;
+	 phases AN;
+	 from 500-933238;
+	 to 402-619382;
+	 length 269.799917;
+	 configuration underground_line_config_AN_104_104;
+	 } 
+
+object underground_line {
+	 name 411-908053-0;
+	 phases BN;
+	 from Fuse_402-619382;
+	 to 402-619382;
+	 length 270.198807;
+	 configuration underground_line_config_BN_104_104;
+	 } 
+
+object underground_line {
+	 name 411-908056-0;
+	 phases CN;
+	 from 500-933242;
+	 to 402-619382;
+	 length 262.123832;
+	 configuration underground_line_config_CN_104_104;
+	 } 
+

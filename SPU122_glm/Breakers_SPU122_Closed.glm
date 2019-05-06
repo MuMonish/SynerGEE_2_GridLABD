@@ -1,0 +1,13 @@
+//**Breakers_SPU122:
+
+
+object recloser {
+	 name recloser_392-15406;
+	 phases "ABCN";
+	 from SPU122;
+	 to Breaker_416-14448;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+

@@ -1,0 +1,18 @@
+//**Fuses_SPU122:
+
+
+object fuse {
+	 name FUSEs_402-458138;
+	 phases "ABCN";
+	 from 393-72996;
+	 to Fuse_402-458138;
+	 current_limit 1000 A;
+	 mean_replacement_time 360 ;
+	 phase_A_status GOOD;
+	 phase_B_status GOOD;
+	 phase_C_status GOOD;
+	 repair_dist_type NONE;
+}
+
+
+//**End Fuses_SPU122** 

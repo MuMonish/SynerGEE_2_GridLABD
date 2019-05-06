@@ -1,0 +1,70 @@
+//**This is a GridLAB-D Model (glm) file for feeder :SPU125
+
+
+#set profiler=1;
+#set iteration_limit=50;
+#set minimum_timestep=60;
+#set relax_naming_rules=1;
+
+
+clock {
+	 timezone PST+8PDT;
+	 starttime '2019-05-06 14:30:31';
+	 stoptime '2019-05-06 14:30:31';
+}
+
+
+module powerflow{
+	 solver_method NR;
+	 default_maximum_voltage_error 1e-6;
+	 NR_superLU_procs 1;
+	 line_capacitance true;
+}
+
+
+module residential;
+module generators;
+module tape;
+//Substation interconnects 
+#include "Breakers_SPU125_Closed.glm";
+#include "Fuses_SPU125_Closed.glm";
+#include "Large_customers_SPU125.glm";
+#include "Loads_SPU125.glm";
+#include "Node_SPU125.glm";
+#include "OH_Line_Configuration_SPU125.glm";
+#include "OverheadLines_SPU125.glm";
+#include "Regulators_SPU125_Closed.glm";
+#include "Switches_SPU125_Closed.glm";
+#include "Transformers_SPU125_Closed.glm";
+#include "UG_Line_Configuration_SPU125.glm";
+#include "UndergroundLines_SPU125.glm";
+
+
+object collector {
+	 name loss_OH;
+	 group class=overhead_line;
+	 property sum(power_losses.real);
+	 file "OH_lines_losses.csv";
+}
+
+
+object collector {
+	 name loss_UG;
+	 group class=underground_line;
+	 property sum(power_losses.real);
+	 file "UG_lines_losses.csv";
+}
+
+
+object voltdump {
+	 filename output_voltage.csv;
+	 mode polar;
+}
+
+
+object currdump {
+	 filename output_current.csv;
+	 mode polar;
+}
+
+

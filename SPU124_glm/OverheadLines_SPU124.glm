@@ -1,0 +1,318 @@
+//**Overhead Lines forSPU124:
+
+
+object overhead_line {
+	 name 389-1189749-0;
+	 phases ABCN;
+	 from Reg_SPU124;
+	 to 416-32020;
+	 length 24.157409;
+	 configuration overhead_line_config_ABCN_94_94;
+	 } 
+
+object overhead_line {
+	 name 389-1190692-0;
+	 phases ABCN;
+	 from 500-634865;
+	 to 500-634866;
+	 length 18.369353;
+	 configuration overhead_line_config_ABCN_40_94;
+	 } 
+
+object overhead_line {
+	 name 389-1243304-0;
+	 phases ABCN;
+	 from 403-474445;
+	 to 390-49306;
+	 length 73.157194;
+	 configuration overhead_line_config_ABCN_40_94;
+	 } 
+
+object overhead_line {
+	 name 389-2201457-0;
+	 phases ABCN;
+	 from Fuse_402-1056198;
+	 to 402-1056198;
+	 length 60.000952;
+	 configuration overhead_line_config_ABCN_83_83;
+	 } 
+
+object overhead_line {
+	 name 389-2397319-0;
+	 phases ABCN;
+	 from 416-32020;
+	 to 500-634865;
+	 length 29.225804;
+	 configuration overhead_line_config_ABCN_40_94;
+	 } 
+
+object overhead_line {
+	 name 389-2397319-1;
+	 phases ABCN;
+	 from 500-634865;
+	 to 406-904708;
+	 length 258.725707;
+	 configuration overhead_line_config_ABCN_40_94;
+	 } 
+
+object overhead_line {
+	 name 389-2397319-2;
+	 phases ABCN;
+	 from 406-904708;
+	 to 403-841449;
+	 length 20.000309;
+	 configuration overhead_line_config_ABCN_40_94;
+	 } 
+
+object overhead_line {
+	 name 389-2397320-0;
+	 phases ABCN;
+	 from 403-841449;
+	 to 403-474445;
+	 length 22.154444;
+	 configuration overhead_line_config_ABCN_40_62;
+	 } 
+
+object overhead_line {
+	 name 389-3021153-0;
+	 phases ABCN;
+	 from 403-474445;
+	 to 500-1889727;
+	 length 2770.037426;
+	 configuration overhead_line_config_ABCN_40_62;
+	 } 
+
+object overhead_line {
+	 name 389-3136995-0;
+	 phases ABC;
+	 from 402-1492513;
+	 to 500-2974791;
+	 length 40.000619;
+	 configuration overhead_line_config_ABC_83_83;
+	 } 
+
+object overhead_line {
+	 name 389-3137350-0;
+	 phases ABC;
+	 from 500-2975051;
+	 to 392-111418;
+	 length 85.027651;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137350-1;
+	 phases ABC;
+	 from Breaker_392-111430;
+	 to 392-111430;
+	 length 42.399713;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137351-0;
+	 phases ABC;
+	 from 500-2975361;
+	 to 500-2975051;
+	 length 67.478756;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137351-1;
+	 phases ABC;
+	 from Breaker_392-111426;
+	 to 392-111426;
+	 length 62.312387;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137650-0;
+	 phases ABC;
+	 from 500-2975042;
+	 to 392-111415;
+	 length 84.047169;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137651-0;
+	 phases ABC;
+	 from 392-111416;
+	 to 500-2975042;
+	 length 46.155181;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137652-0;
+	 phases ABC;
+	 from Breaker_392-111416;
+	 to 392-111416;
+	 length 19.997993;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137653-0;
+	 phases ABC;
+	 from 392-111417;
+	 to 500-2975365;
+	 length 94.138427;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137653-1;
+	 phases ABC;
+	 from 500-2975365;
+	 to 500-2975361;
+	 length 57.048607;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137654-0;
+	 phases ABC;
+	 from 500-2975042;
+	 to 500-2975363;
+	 length 58.755882;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137654-1;
+	 phases ABC;
+	 from Breaker_392-111417;
+	 to 392-111417;
+	 length 19.998881;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137655-0;
+	 phases ABC;
+	 from 392-111425;
+	 to 500-2975362;
+	 length 32.186407;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137656-0;
+	 phases ABC;
+	 from 392-111424;
+	 to 500-2975366;
+	 length 183.551207;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137656-1;
+	 phases ABC;
+	 from Breaker_392-111421;
+	 to 392-111421;
+	 length 51.702275;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137658-0;
+	 phases ABC;
+	 from 500-2975366;
+	 to 500-2975367;
+	 length 102.990791;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137658-1;
+	 phases ABC;
+	 from Breaker_392-111419;
+	 to 392-111419;
+	 length 56.803032;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137659-0;
+	 phases ABC;
+	 from Breaker_392-111420;
+	 to 392-111420;
+	 length 27.611173;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137660-0;
+	 phases ABC;
+	 from Breaker_392-111419;
+	 to 392-111419;
+	 length 20.001553;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137662-0;
+	 phases ABC;
+	 from 392-111421;
+	 to 500-2975364;
+	 length 19.998731;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137664-0;
+	 phases ABC;
+	 from Breaker_392-111423;
+	 to 392-111423;
+	 length 97.705821;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137665-0;
+	 phases ABC;
+	 from Breaker_392-111424;
+	 to 392-111424;
+	 length 126.879868;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137666-0;
+	 phases ABC;
+	 from Breaker_392-111425;
+	 to 392-111425;
+	 length 19.998837;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137667-0;
+	 phases ABC;
+	 from 392-111426;
+	 to 500-2975052;
+	 length 20.001560;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 389-3137671-0;
+	 phases ABC;
+	 from 392-111430;
+	 to 500-2975050;
+	 length 20.000325;
+	 configuration overhead_line_config_ABC_2_2;
+	 } 
+
+object overhead_line {
+	 name 395-2147912-0;
+	 phases ABCN;
+	 from 391-1749449;
+	 to 391-1749449;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_14_14;
+	 } 
+

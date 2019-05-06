@@ -1,0 +1,42 @@
+//**Capacitors_TUR117:
+
+
+object capacitor {
+	 parent 393-73970;
+	 name Cap_393-73970;
+	 phases ABCN;
+	 phases_connected ABCN;
+	 control MANUAL;
+	voltage_set_high  8366;
+	voltage_set_low   7569;
+	 capacitor_A 0.100000 MVAr;
+	 capacitor_B 0.100000 MVAr;
+	 capacitor_C 0.100000 MVAr;
+	 switchA CLOSED;
+	 switchB CLOSED;
+	 switchC CLOSED;
+	 control_level INDIVIDUAL;
+	 nominal_voltage 7970.00;
+}
+
+
+object capacitor {
+	 parent 393-70114;
+	 name Cap_393-70114;
+	 phases ABCN;
+	 phases_connected ABCN;
+	 control MANUAL;
+	voltage_set_high  8366;
+	voltage_set_low   7569;
+	 capacitor_A 0.100000 MVAr;
+	 capacitor_B 0.100000 MVAr;
+	 capacitor_C 0.100000 MVAr;
+	 switchA CLOSED;
+	 switchB CLOSED;
+	 switchC CLOSED;
+	 control_level INDIVIDUAL;
+	 nominal_voltage 7970.00;
+}
+
+
+//**End Capacitors_TUR117** 

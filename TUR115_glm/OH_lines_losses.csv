@@ -1,0 +1,9 @@
+# file...... OH_lines_losses.csv
+# date...... Fri May 03 14:49:07 2019
+# user...... Nathan Gray
+# host...... (null)
+# group..... class=overhead_line
+# trigger... (none)
+# interval.. -1
+# limit..... 0
+# property.. timestamp,sum(power_losses.real)

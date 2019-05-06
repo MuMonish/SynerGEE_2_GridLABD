@@ -1,0 +1,34 @@
+//**Switches_SPU125:
+
+
+object switch {
+	 name Switch_396-67860;
+	 phases ABCN;
+	 from 409-401941;
+	 to SW_409-401941;
+	 phase_A_state CLOSED;
+	 phase_B_state CLOSED;
+	 phase_C_state CLOSED;
+	 operating_mode INDIVIDUAL;
+}
+object switch {
+	 name Switch_390-59546;
+	 phases ABCN;
+	 from 403-618762;
+	 to SW_403-618762;
+	 phase_A_state CLOSED;
+	 phase_B_state CLOSED;
+	 phase_C_state CLOSED;
+	 operating_mode INDIVIDUAL;
+}
+object switch {
+	 name Switch_390-59548;
+	 phases ABCN;
+	 from 500-933236;
+	 to SW_500-933236;
+	 phase_A_state CLOSED;
+	 phase_B_state CLOSED;
+	 phase_C_state CLOSED;
+	 operating_mode INDIVIDUAL;
+}
+//**End Switches_SPU125** 

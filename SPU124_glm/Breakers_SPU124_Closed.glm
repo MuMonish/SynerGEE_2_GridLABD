@@ -1,0 +1,123 @@
+//**Breakers_SPU124:
+
+
+object recloser {
+	 name recloser_392-30742;
+	 phases "ABCN";
+	 from SPU124;
+	 to Breaker_416-32020;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser2;
+	 phases "ABC";
+	 from 500-2975051;
+	 to Breaker_392-111430;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser3;
+	 phases "ABC";
+	 from 500-2975361;
+	 to Breaker_392-111426;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser4;
+	 phases "ABC";
+	 from 500-2974791;
+	 to Breaker_392-111416;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser5;
+	 phases "ABC";
+	 from 500-2975363;
+	 to Breaker_392-111417;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser6;
+	 phases "ABC";
+	 from 500-2975366;
+	 to Breaker_392-111421;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser7;
+	 phases "ABC";
+	 from 500-2975367;
+	 to Breaker_392-111419;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser8;
+	 phases "ABC";
+	 from 500-2975367;
+	 to Breaker_392-111420;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser9;
+	 phases "ABC";
+	 from 500-2975365;
+	 to Breaker_392-111419;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser10;
+	 phases "ABC";
+	 from 500-2975363;
+	 to Breaker_392-111423;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser11;
+	 phases "ABC";
+	 from 392-111423;
+	 to Breaker_392-111424;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+
+object recloser {
+	 name recloser_Breaker Recloser12;
+	 phases "ABC";
+	 from 500-2975042;
+	 to Breaker_392-111425;
+	 retry_time 1s;
+	 max_number_of_tries 3;
+}
+
+

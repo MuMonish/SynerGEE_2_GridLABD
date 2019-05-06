@@ -143,7 +143,7 @@ if size(BreakerMatrix,1) > 0
             sameID_index = find(ismember(Breaker_UniqID,Breaker_UniqID(i)));
             if length(sameIDs) > 1
                 for j = 1:length(sameIDs)
-                    Breaker_UniqID(sameID_index(j)) = {char(strcat(Breaker_UniqID(sameID_index(j)),num2str(sameID_index(j))))};
+                    Breaker_UniqID(sameID_index(j)) = {char(strcat("recloser_Breaker Recloser","_",FeederName,"_",num2str(2)))};
                 end
             end
         end

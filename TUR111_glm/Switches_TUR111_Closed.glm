@@ -1,0 +1,24 @@
+//**Switches_TUR111:
+
+
+object switch {
+	 name Switch_396-66899;
+	 phases ABCN;
+	 from 406-1032405;
+	 to SW_406-1032405;
+	 phase_A_state CLOSED;
+	 phase_B_state CLOSED;
+	 phase_C_state CLOSED;
+	 operating_mode INDIVIDUAL;
+}
+object switch {
+	 name Switch_396-150741;
+	 phases ABCN;
+	 from 416-69802;
+	 to SW_416-69802;
+	 phase_A_state CLOSED;
+	 phase_B_state CLOSED;
+	 phase_C_state CLOSED;
+	 operating_mode INDIVIDUAL;
+}
+//**End Switches_TUR111** 
