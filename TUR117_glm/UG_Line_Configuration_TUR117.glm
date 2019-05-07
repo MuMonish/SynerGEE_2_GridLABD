@@ -2,7 +2,7 @@
 
 
 object line_configuration {
-	 name underground_line_config_AN_108_108;
+	 name underground_line_config_AN_104_104;
 	 z11 0.406667+0.301667j;
 	 z12 0.136667-0.024333j;
 	 z13 0.136667-0.024333j;
@@ -15,7 +15,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_AN_11_11;
+	 name underground_line_config_AN_10_10;
 	 z11 0.393000+0.273000j;
 	 z12 0.121000-0.030000j;
 	 z13 0.121000-0.030000j;
@@ -28,7 +28,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_AN_132_132;
+	 name underground_line_config_AN_128_128;
 	 z11 2.725333+1.501667j;
 	 z12 0.202333+0.635667j;
 	 z13 0.202333+0.635667j;
@@ -41,7 +41,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_AN_35_35;
+	 name underground_line_config_AN_34_34;
 	 z11 1.772000+0.783667j;
 	 z12 0.492000+0.254667j;
 	 z13 0.492000+0.254667j;
@@ -54,7 +54,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_AN_40_40;
+	 name underground_line_config_AN_39_39;
 	 z11 1.003000+1.353933j;
 	 z12 0.160000+0.506033j;
 	 z13 0.160000+0.506033j;
@@ -67,20 +67,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_AN_52_52;
-	 z11 2.072667+0.745333j;
-	 z12 0.466667+0.204333j;
-	 z13 0.466667+0.204333j;
-	 z21 0.466667+0.204333j;
-	 z22 2.072667+0.745333j;
-	 z23 0.466667+0.204333j;
-	 z31 0.466667+0.204333j;
-	 z32 0.466667+0.204333j;
-	 z33 2.072667+0.745333j;
-	 }
-
-object line_configuration {
-	 name underground_line_config_AN_5_5;
+	 name underground_line_config_AN_4_4;
 	 z11 1.517000+0.773000j;
 	 z12 0.492000+0.257000j;
 	 z13 0.492000+0.257000j;
@@ -93,7 +80,20 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_AN_67_67;
+	 name underground_line_config_AN_50_50;
+	 z11 2.072667+0.745333j;
+	 z12 0.466667+0.204333j;
+	 z13 0.466667+0.204333j;
+	 z21 0.466667+0.204333j;
+	 z22 2.072667+0.745333j;
+	 z23 0.466667+0.204333j;
+	 z31 0.466667+0.204333j;
+	 z32 0.466667+0.204333j;
+	 z33 2.072667+0.745333j;
+	 }
+
+object line_configuration {
+	 name underground_line_config_AN_64_64;
 	 z11 0.692667+0.462000j;
 	 z12 0.311667+0.042000j;
 	 z13 0.311667+0.042000j;
@@ -106,7 +106,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_AN_83_83;
+	 name underground_line_config_AN_79_79;
 	 z11 2.660000+1.500000j;
 	 z12 0.201000+0.637500j;
 	 z13 0.201000+0.637500j;
@@ -119,7 +119,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_AN_94_94;
+	 name underground_line_config_AN_90_90;
 	 z11 0.345667+1.151733j;
 	 z12 0.159667+0.506133j;
 	 z13 0.159667+0.506133j;
@@ -132,7 +132,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_108_108;
+	 name underground_line_config_BN_104_104;
 	 z11 0.406667+0.301667j;
 	 z12 0.136667-0.024333j;
 	 z13 0.136667-0.024333j;
@@ -145,7 +145,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_11_11;
+	 name underground_line_config_BN_10_10;
 	 z11 0.393000+0.273000j;
 	 z12 0.121000-0.030000j;
 	 z13 0.121000-0.030000j;
@@ -158,7 +158,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_132_132;
+	 name underground_line_config_BN_128_128;
 	 z11 2.725333+1.501667j;
 	 z12 0.202333+0.635667j;
 	 z13 0.202333+0.635667j;
@@ -171,7 +171,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_35_35;
+	 name underground_line_config_BN_34_34;
 	 z11 1.772000+0.783667j;
 	 z12 0.492000+0.254667j;
 	 z13 0.492000+0.254667j;
@@ -184,7 +184,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_40_40;
+	 name underground_line_config_BN_39_39;
 	 z11 1.003000+1.353933j;
 	 z12 0.160000+0.506033j;
 	 z13 0.160000+0.506033j;
@@ -197,20 +197,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_52_52;
-	 z11 2.072667+0.745333j;
-	 z12 0.466667+0.204333j;
-	 z13 0.466667+0.204333j;
-	 z21 0.466667+0.204333j;
-	 z22 2.072667+0.745333j;
-	 z23 0.466667+0.204333j;
-	 z31 0.466667+0.204333j;
-	 z32 0.466667+0.204333j;
-	 z33 2.072667+0.745333j;
-	 }
-
-object line_configuration {
-	 name underground_line_config_BN_5_5;
+	 name underground_line_config_BN_4_4;
 	 z11 1.517000+0.773000j;
 	 z12 0.492000+0.257000j;
 	 z13 0.492000+0.257000j;
@@ -223,7 +210,20 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_67_67;
+	 name underground_line_config_BN_50_50;
+	 z11 2.072667+0.745333j;
+	 z12 0.466667+0.204333j;
+	 z13 0.466667+0.204333j;
+	 z21 0.466667+0.204333j;
+	 z22 2.072667+0.745333j;
+	 z23 0.466667+0.204333j;
+	 z31 0.466667+0.204333j;
+	 z32 0.466667+0.204333j;
+	 z33 2.072667+0.745333j;
+	 }
+
+object line_configuration {
+	 name underground_line_config_BN_64_64;
 	 z11 0.692667+0.462000j;
 	 z12 0.311667+0.042000j;
 	 z13 0.311667+0.042000j;
@@ -236,7 +236,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_83_83;
+	 name underground_line_config_BN_79_79;
 	 z11 2.660000+1.500000j;
 	 z12 0.201000+0.637500j;
 	 z13 0.201000+0.637500j;
@@ -249,7 +249,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_BN_94_94;
+	 name underground_line_config_BN_90_90;
 	 z11 0.345667+1.151733j;
 	 z12 0.159667+0.506133j;
 	 z13 0.159667+0.506133j;
@@ -262,7 +262,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_108_108;
+	 name underground_line_config_CN_104_104;
 	 z11 0.406667+0.301667j;
 	 z12 0.136667-0.024333j;
 	 z13 0.136667-0.024333j;
@@ -275,7 +275,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_11_11;
+	 name underground_line_config_CN_10_10;
 	 z11 0.393000+0.273000j;
 	 z12 0.121000-0.030000j;
 	 z13 0.121000-0.030000j;
@@ -288,7 +288,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_132_132;
+	 name underground_line_config_CN_128_128;
 	 z11 2.725333+1.501667j;
 	 z12 0.202333+0.635667j;
 	 z13 0.202333+0.635667j;
@@ -301,7 +301,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_35_35;
+	 name underground_line_config_CN_34_34;
 	 z11 1.772000+0.783667j;
 	 z12 0.492000+0.254667j;
 	 z13 0.492000+0.254667j;
@@ -314,7 +314,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_40_40;
+	 name underground_line_config_CN_39_39;
 	 z11 1.003000+1.353933j;
 	 z12 0.160000+0.506033j;
 	 z13 0.160000+0.506033j;
@@ -327,20 +327,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_52_52;
-	 z11 2.072667+0.745333j;
-	 z12 0.466667+0.204333j;
-	 z13 0.466667+0.204333j;
-	 z21 0.466667+0.204333j;
-	 z22 2.072667+0.745333j;
-	 z23 0.466667+0.204333j;
-	 z31 0.466667+0.204333j;
-	 z32 0.466667+0.204333j;
-	 z33 2.072667+0.745333j;
-	 }
-
-object line_configuration {
-	 name underground_line_config_CN_5_5;
+	 name underground_line_config_CN_4_4;
 	 z11 1.517000+0.773000j;
 	 z12 0.492000+0.257000j;
 	 z13 0.492000+0.257000j;
@@ -353,7 +340,20 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_67_67;
+	 name underground_line_config_CN_50_50;
+	 z11 2.072667+0.745333j;
+	 z12 0.466667+0.204333j;
+	 z13 0.466667+0.204333j;
+	 z21 0.466667+0.204333j;
+	 z22 2.072667+0.745333j;
+	 z23 0.466667+0.204333j;
+	 z31 0.466667+0.204333j;
+	 z32 0.466667+0.204333j;
+	 z33 2.072667+0.745333j;
+	 }
+
+object line_configuration {
+	 name underground_line_config_CN_64_64;
 	 z11 0.692667+0.462000j;
 	 z12 0.311667+0.042000j;
 	 z13 0.311667+0.042000j;
@@ -366,7 +366,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_83_83;
+	 name underground_line_config_CN_79_79;
 	 z11 2.660000+1.500000j;
 	 z12 0.201000+0.637500j;
 	 z13 0.201000+0.637500j;
@@ -379,7 +379,7 @@ object line_configuration {
 	 }
 
 object line_configuration {
-	 name underground_line_config_CN_94_94;
+	 name underground_line_config_CN_90_90;
 	 z11 0.345667+1.151733j;
 	 z12 0.159667+0.506133j;
 	 z13 0.159667+0.506133j;

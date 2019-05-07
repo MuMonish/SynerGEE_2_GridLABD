@@ -17,7 +17,7 @@ object transformer_configuration {
 object transformer  {
 	 name Trafo_409-401940;
 	 phases ABCN;
-	 from 403-181883;
+	 from 500-933235;
 	 to Xfmr_409-401940;
 	 configuration Xfmr_Config_113;
 }

@@ -1,0 +1,2487 @@
+//**Nodes forTVW131:
+
+
+object node {
+	 name 391-1079290;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1095639;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1095640;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1095641;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1100740;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1100741;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1100742;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1102353;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1102355;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1102644;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1173780;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1173781;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1173782;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1173783;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1173784;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1173785;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1179828;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1179829;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1179831;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1182200;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1182202;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1182203;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323796;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323797;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323798;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323799;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323800;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323801;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323802;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323803;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323804;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323805;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323806;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323807;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323808;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323809;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323810;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323811;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323812;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323813;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323814;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323815;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323816;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323820;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323821;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323822;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323823;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323826;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323827;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323828;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323829;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323830;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323831;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323832;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323833;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323836;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323837;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323838;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323839;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323840;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323841;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323842;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323843;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323844;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323876;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323877;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323879;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323881;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323882;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323884;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323885;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1323886;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1324404;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1324405;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1324406;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1324412;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326356;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326357;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326358;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326359;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326360;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326361;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326362;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326363;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326364;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326368;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326369;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1326370;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1332457;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1366997;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1367005;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1367006;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1367007;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1367009;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1367010;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1367011;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1384582;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1384583;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1384584;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1434872;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1434873;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1434874;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1600651;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1600652;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1600654;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1643876;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1643877;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1643878;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-1708485;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261629;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261630;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261631;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261635;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261636;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261637;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261646;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261650;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261651;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-261652;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-264884;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-264885;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-264886;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-525373;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-525374;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-525375;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-525376;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-525377;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-525378;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-525379;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526292;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526293;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526294;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526295;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526296;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526297;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526298;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526299;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526300;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526301;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-526302;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-544228;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-544230;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-544231;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562804;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562805;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562806;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562808;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562809;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562810;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562812;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562813;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-562814;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-670943;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676695;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676696;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676697;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676740;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676741;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676742;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676744;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676745;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676746;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676747;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-676750;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-677661;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-677662;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-677663;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-952892;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-952893;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-952894;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-952895;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-952896;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-952897;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-952898;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-952899;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 391-953204;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1011425;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1011427;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1011429;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1266119;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1266121;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1266123;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677163;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677165;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677167;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677169;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677170;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677172;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677174;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677182;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677184;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677186;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677188;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677189;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677190;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677261;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677262;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677263;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677743;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677753;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677754;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677755;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1677756;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1679745;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1686124;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715900;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715902;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715904;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715906;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715908;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715910;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715912;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715914;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1715916;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1724476;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1724477;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1724478;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1724480;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1724494;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1724495;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1724496;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1823676;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1823678;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-1823680;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-2103740;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-2103742;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-2103743;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-2103745;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-2103746;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-2103748;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-2103750;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-901257;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-901259;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-901261;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-907964;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-907966;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-907968;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-911516;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-911517;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-911518;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-975870;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-975873;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 395-975875;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 402-1369238;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 416-52180;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 500-2813320;
+	 phases AN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 500-2813322;
+	 phases BN;
+	 nominal_voltage 7970.00;
+	 voltage_B 7970.00-120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name 500-2813324;
+	 phases CN;
+	 nominal_voltage 7970.00;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1011427;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1677167;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1677172;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1677184;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1677189;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1677755;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1715902;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1715908;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1715914;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1724477;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1724495;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-1823678;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-2103742;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-2103748;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-901259;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name MID-395-907966;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name TVW131;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype SWING;
+}
+
+
+object node {
+	 name Breaker_416-52180;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name Fuse_402-1369238;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+
+object node {
+	 name Reg_TVW131;
+	 phases ABCN;
+	 nominal_voltage 7970.00;
+	 voltage_A 7970.00+0d;
+	 voltage_B 7970.00-120.0d;
+	 voltage_C 7970.00+120.0d;
+	 bustype PQ;
+}
+
+

@@ -1,9 +1,9 @@
 %%Combine Switch, Regulator and Fuse
 %*******Assume all switches and fuses are in "closed and good status"******
 
-function Make_Breaker_Switch_Regulator_Fuse=making_Breaker_Switch_Regulator_Fuse(dir_name,FeederName,NonimalVolt,glm_dir_name)
+function Make_Breaker_Switch_Regulator_Fuse=making_Breaker_Switch_Regulator_Fuse(dir_name,FeederName,NonimalVolt,glm_dir_name,AllClosed)
 % Assume all closed?
-AllClosed = false; % Gridlab-D will produce errors if the feeder has sections islanded by open switches.
+ % Gridlab-D will produce errors if the feeder has sections islanded by open switches.
 %% Switch   Starts
 
 [SwitchMatrix,SwitchText]=xlsread(strcat(dir_name,'\',FeederName,'_Switches.xlsx'));%xlsread('3HT12F1_Switches.xlsx');

@@ -2,7 +2,7 @@
 
 
 object recloser {
-	 name recloser_Breaker Recloser1;
+	 name recloser_Breaker Recloser_TUR117_1;
 	 phases "ABCN";
 	 from 393-70114;
 	 to Breaker_392-82614;
@@ -12,7 +12,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser2;
+	 name recloser_Breaker Recloser_TUR117_2;
 	 phases "ABCN";
 	 from 500-2843159;
 	 to Breaker_392-88054;
@@ -32,7 +32,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser4;
+	 name recloser_Breaker Recloser_TUR117_3;
 	 phases "ABCN";
 	 from 500-72681;
 	 to Breaker_392-93494;

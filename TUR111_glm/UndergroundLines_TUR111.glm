@@ -1,0 +1,2055 @@
+//**Underground Lines forTUR111:
+
+
+object underground_line {
+	 name 389-3050623-0;
+	 phases ABCN;
+	 from SW_416-69802;
+	 to 396-150741;
+	 length 41.914928;
+	 configuration underground_line_config_ABCN_10_10;
+	 } 
+
+object underground_line {
+	 name 389-3107585-0;
+	 phases ABCN;
+	 from 396-150741;
+	 to 500-2878316;
+	 length 15.132350;
+	 configuration underground_line_config_ABCN_10_10;
+	 } 
+
+object underground_line {
+	 name 394-1023108-0;
+	 phases AN;
+	 from 391-670933;
+	 to 395-900932;
+	 length 2063.874506;
+	 configuration underground_line_config_AN_108_108;
+	 } 
+
+object underground_line {
+	 name 394-1023109-0;
+	 phases BN;
+	 from 391-670932;
+	 to 395-900932;
+	 length 2067.806825;
+	 configuration underground_line_config_BN_108_108;
+	 } 
+
+object underground_line {
+	 name 394-1023110-0;
+	 phases CN;
+	 from 391-670934;
+	 to 395-900932;
+	 length 2068.674801;
+	 configuration underground_line_config_CN_108_108;
+	 } 
+
+object underground_line {
+	 name 394-1027858-0;
+	 phases AN;
+	 from 391-560868;
+	 to 391-675098;
+	 length 59.081779;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-1027860-0;
+	 phases CN;
+	 from 391-560867;
+	 to 391-675096;
+	 length 72.688200;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-1027862-0;
+	 phases BN;
+	 from 391-560869;
+	 to 391-675097;
+	 length 63.579629;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-1031406;
+	 phases AN;
+	 from 396-66899;
+	 to 500-908389;
+	 length 10.000000;
+	 configuration underground_line_config_AN_90_90;
+	 } 
+
+object underground_line {
+	 name 394-1031408;
+	 phases BN;
+	 from 396-66899;
+	 to 500-908391;
+	 length 10.000000;
+	 configuration underground_line_config_BN_90_90;
+	 } 
+
+object underground_line {
+	 name 394-1031410;
+	 phases CN;
+	 from 396-66899;
+	 to 500-908393;
+	 length 10.000000;
+	 configuration underground_line_config_CN_90_90;
+	 } 
+
+object underground_line {
+	 name 394-1906874-0;
+	 phases AN;
+	 from 391-560875;
+	 to 391-1224580;
+	 length 68.698232;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-1906875-0;
+	 phases BN;
+	 from 391-560874;
+	 to 391-1224583;
+	 length 64.701434;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-1906876-0;
+	 phases CN;
+	 from 391-560873;
+	 to 391-1224582;
+	 length 82.392745;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-1906877-0;
+	 phases AN;
+	 from 391-560875;
+	 to 391-1224584;
+	 length 67.356497;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-1906878-0;
+	 phases BN;
+	 from 391-560874;
+	 to 391-1224587;
+	 length 63.812020;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-1906879-0;
+	 phases CN;
+	 from 391-560873;
+	 to 391-1224586;
+	 length 81.619894;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-2007069-0;
+	 phases AN;
+	 from 391-1314806;
+	 to 391-1314812;
+	 length 63.731072;
+	 configuration underground_line_config_AN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2007070-0;
+	 phases BN;
+	 from 391-1314805;
+	 to 391-1314813;
+	 length 44.774127;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2007071-0;
+	 phases CN;
+	 from 391-1314804;
+	 to 391-1314814;
+	 length 48.062961;
+	 configuration underground_line_config_CN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2007075-0;
+	 phases AN;
+	 from 391-1314806;
+	 to 391-1314809;
+	 length 66.852827;
+	 configuration underground_line_config_AN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2007076-0;
+	 phases BN;
+	 from 391-1314805;
+	 to 391-1314810;
+	 length 62.432336;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2007077-0;
+	 phases CN;
+	 from 391-1314804;
+	 to 391-1314807;
+	 length 72.973530;
+	 configuration underground_line_config_CN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500292-0;
+	 phases AN;
+	 from 391-1731911;
+	 to 391-1731914;
+	 length 415.001439;
+	 configuration underground_line_config_AN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500293-0;
+	 phases BN;
+	 from 391-1731912;
+	 to 391-1731915;
+	 length 420.792583;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500294-0;
+	 phases CN;
+	 from 391-1731913;
+	 to 391-1731916;
+	 length 423.645512;
+	 configuration underground_line_config_CN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500330-0;
+	 phases AN;
+	 from 391-1731914;
+	 to 391-1635536;
+	 length 68.688195;
+	 configuration underground_line_config_AN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500332-0;
+	 phases BN;
+	 from 391-1731915;
+	 to 391-1635537;
+	 length 67.095903;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500334-0;
+	 phases CN;
+	 from 391-1731916;
+	 to 391-1635538;
+	 length 69.915888;
+	 configuration underground_line_config_CN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500336-0;
+	 phases AN;
+	 from 391-1731914;
+	 to 391-1635556;
+	 length 121.338178;
+	 configuration underground_line_config_AN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500338-0;
+	 phases BN;
+	 from 391-1731915;
+	 to 391-1635557;
+	 length 149.872535;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500340-0;
+	 phases CN;
+	 from 391-1731916;
+	 to 391-1635558;
+	 length 161.386046;
+	 configuration underground_line_config_CN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2500342-0;
+	 phases BN;
+	 from 391-1731912;
+	 to 391-1636166;
+	 length 88.811176;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2505993-0;
+	 phases AN;
+	 from 391-1314806;
+	 to 391-1731911;
+	 length 661.716317;
+	 configuration underground_line_config_AN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2505995-0;
+	 phases BN;
+	 from 391-1314805;
+	 to 391-1731912;
+	 length 667.549662;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-2505997-0;
+	 phases CN;
+	 from 391-1314804;
+	 to 391-1731913;
+	 length 670.555245;
+	 configuration underground_line_config_CN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-858328-0;
+	 phases AN;
+	 from 391-560884;
+	 to 391-560886;
+	 length 238.651538;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858353-0;
+	 phases AN;
+	 from 391-559908;
+	 to 391-560853;
+	 length 350.239017;
+	 configuration underground_line_config_AN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-858355-0;
+	 phases CN;
+	 from 391-559909;
+	 to 391-560852;
+	 length 333.890001;
+	 configuration underground_line_config_CN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-858357-0;
+	 phases BN;
+	 from 391-559619;
+	 to 391-560854;
+	 length 343.792555;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 394-858369-0;
+	 phases AN;
+	 from 391-560853;
+	 to 391-560858;
+	 length 662.591889;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858371-0;
+	 phases BN;
+	 from 391-560854;
+	 to 391-560859;
+	 length 648.354597;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858373-0;
+	 phases CN;
+	 from 391-560852;
+	 to 391-560860;
+	 length 631.372315;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858375-0;
+	 phases AN;
+	 from 391-560858;
+	 to 395-758929;
+	 length 17.897132;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858376-0;
+	 phases AN;
+	 from 391-560863;
+	 to 395-758929;
+	 length 238.625860;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858377-0;
+	 phases BN;
+	 from 391-560859;
+	 to 395-758931;
+	 length 26.535457;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858378-0;
+	 phases BN;
+	 from 391-560861;
+	 to 395-758931;
+	 length 244.984828;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858379-0;
+	 phases CN;
+	 from 391-560860;
+	 to 395-758933;
+	 length 17.755910;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858380-0;
+	 phases CN;
+	 from 391-560862;
+	 to 395-758933;
+	 length 248.209571;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858387-0;
+	 phases AN;
+	 from 391-560858;
+	 to 391-560868;
+	 length 194.290673;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858389-0;
+	 phases BN;
+	 from 391-560859;
+	 to 391-560869;
+	 length 198.119191;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858391-0;
+	 phases CN;
+	 from 391-560860;
+	 to 391-560867;
+	 length 198.923088;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858393-0;
+	 phases AN;
+	 from 391-560863;
+	 to 391-560871;
+	 length 167.588660;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858394-0;
+	 phases BN;
+	 from 391-560861;
+	 to 391-560872;
+	 length 172.809318;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858395-0;
+	 phases CN;
+	 from 391-560862;
+	 to 391-560870;
+	 length 200.514287;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858400-0;
+	 phases AN;
+	 from 391-560877;
+	 to 391-560865;
+	 length 422.942598;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858402-0;
+	 phases BN;
+	 from 391-560876;
+	 to 391-560866;
+	 length 421.400318;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858404-0;
+	 phases CN;
+	 from 391-560878;
+	 to 391-560864;
+	 length 399.214800;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858406-0;
+	 phases AN;
+	 from 391-560875;
+	 to 391-560877;
+	 length 127.786959;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858408-0;
+	 phases BN;
+	 from 391-560874;
+	 to 391-560876;
+	 length 141.957639;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858410-0;
+	 phases CN;
+	 from 391-560873;
+	 to 391-560878;
+	 length 135.948385;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858453-0;
+	 phases AN;
+	 from 391-560886;
+	 to 395-758983;
+	 length 17.763954;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858454-0;
+	 phases AN;
+	 from 391-560888;
+	 to 395-758983;
+	 length 74.726912;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858455-0;
+	 phases CN;
+	 from 391-560887;
+	 to 395-758987;
+	 length 26.620192;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858456-0;
+	 phases CN;
+	 from 391-560889;
+	 to 395-758987;
+	 length 106.692669;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858457-0;
+	 phases BN;
+	 from 391-560885;
+	 to 395-758985;
+	 length 17.957106;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858458-0;
+	 phases BN;
+	 from 391-560890;
+	 to 395-758985;
+	 length 83.615376;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858498-0;
+	 phases AN;
+	 from 391-560898;
+	 to 395-759020;
+	 length 121.949464;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858499-0;
+	 phases BN;
+	 from 391-560897;
+	 to 395-759020;
+	 length 111.679408;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858500-0;
+	 phases CN;
+	 from 391-560899;
+	 to 395-759020;
+	 length 124.543717;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858502-0;
+	 phases AN;
+	 from 391-560902;
+	 to 391-560898;
+	 length 192.047260;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858504-0;
+	 phases BN;
+	 from 391-560900;
+	 to 391-560897;
+	 length 208.066991;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858506-0;
+	 phases CN;
+	 from 391-560901;
+	 to 391-560899;
+	 length 229.825341;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858559-0;
+	 phases AN;
+	 from 391-560886;
+	 to 391-560910;
+	 length 55.811622;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858561-0;
+	 phases CN;
+	 from 391-560887;
+	 to 391-560907;
+	 length 39.890405;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858563-0;
+	 phases BN;
+	 from 391-560885;
+	 to 391-560909;
+	 length 45.584582;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858572-0;
+	 phases AN;
+	 from 391-560856;
+	 to 391-560888;
+	 length 102.922851;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858574-0;
+	 phases CN;
+	 from 391-560855;
+	 to 391-560889;
+	 length 119.618221;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858576-0;
+	 phases BN;
+	 from 391-560857;
+	 to 391-560890;
+	 length 108.428538;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858584-0;
+	 phases AN;
+	 from 391-560886;
+	 to 391-560906;
+	 length 63.737245;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858586-0;
+	 phases CN;
+	 from 391-560887;
+	 to 391-560903;
+	 length 47.319138;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858588-0;
+	 phases BN;
+	 from 391-560885;
+	 to 391-560904;
+	 length 50.869420;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858896-0;
+	 phases AN;
+	 from 391-560865;
+	 to 391-560941;
+	 length 57.242632;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858898-0;
+	 phases CN;
+	 from 391-560864;
+	 to 391-560939;
+	 length 41.166571;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858900-0;
+	 phases BN;
+	 from 391-560866;
+	 to 391-560942;
+	 length 47.035412;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858908-0;
+	 phases AN;
+	 from 391-560865;
+	 to 391-560944;
+	 length 91.672199;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858910-0;
+	 phases CN;
+	 from 391-560864;
+	 to 391-560945;
+	 length 99.431331;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858912-0;
+	 phases BN;
+	 from 391-560866;
+	 to 391-560946;
+	 length 90.868841;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858913-0;
+	 phases CN;
+	 from 391-560882;
+	 to 391-560887;
+	 length 274.179352;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-858915-0;
+	 phases BN;
+	 from 391-560883;
+	 to 391-560885;
+	 length 249.193653;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859534-0;
+	 phases AN;
+	 from 391-560853;
+	 to 395-759507;
+	 length 43.566288;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859535-0;
+	 phases BN;
+	 from 391-560854;
+	 to 395-759507;
+	 length 48.317076;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859536-0;
+	 phases CN;
+	 from 391-560852;
+	 to 395-759507;
+	 length 42.443510;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859537-0;
+	 phases AN;
+	 from 391-560884;
+	 to 391-561186;
+	 length 47.551359;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859538-0;
+	 phases BN;
+	 from 391-560883;
+	 to 391-561185;
+	 length 58.472124;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859539-0;
+	 phases CN;
+	 from 391-560882;
+	 to 391-561187;
+	 length 46.471617;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859543-0;
+	 phases AN;
+	 from 391-560853;
+	 to 395-759513;
+	 length 54.733460;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859544-0;
+	 phases BN;
+	 from 391-560854;
+	 to 395-759513;
+	 length 50.726148;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859545-0;
+	 phases CN;
+	 from 391-560852;
+	 to 395-759513;
+	 length 45.034626;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859559-0;
+	 phases AN;
+	 from 391-560868;
+	 to 391-675103;
+	 length 102.886333;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859560-0;
+	 phases BN;
+	 from 391-560869;
+	 to 391-675102;
+	 length 79.170580;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859561-0;
+	 phases CN;
+	 from 391-560867;
+	 to 391-675100;
+	 length 79.832859;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859563-0;
+	 phases AN;
+	 from 391-560865;
+	 to 391-560863;
+	 length 146.823057;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859565-0;
+	 phases BN;
+	 from 391-560866;
+	 to 391-560861;
+	 length 134.592558;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859567-0;
+	 phases CN;
+	 from 391-560864;
+	 to 391-560862;
+	 length 154.310348;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859581-0;
+	 phases AN;
+	 from 391-560884;
+	 to 391-561181;
+	 length 63.602534;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859582-0;
+	 phases BN;
+	 from 391-560883;
+	 to 391-561182;
+	 length 50.706068;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859583-0;
+	 phases CN;
+	 from 391-560882;
+	 to 391-561183;
+	 length 53.985946;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859590-0;
+	 phases AN;
+	 from 391-560898;
+	 to 391-561190;
+	 length 63.811103;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859591-0;
+	 phases BN;
+	 from 391-560897;
+	 to 391-561189;
+	 length 53.410053;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859592-0;
+	 phases CN;
+	 from 391-560899;
+	 to 391-561191;
+	 length 47.815542;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859596-0;
+	 phases AN;
+	 from 391-560871;
+	 to 391-561194;
+	 length 66.296092;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859597-0;
+	 phases BN;
+	 from 391-560872;
+	 to 391-561192;
+	 length 62.494353;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859598-0;
+	 phases CN;
+	 from 391-560870;
+	 to 391-561193;
+	 length 50.528235;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859602-0;
+	 phases AN;
+	 from 391-560871;
+	 to 391-1265844;
+	 length 63.364666;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859603-0;
+	 phases BN;
+	 from 391-560872;
+	 to 391-1265846;
+	 length 56.781918;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859604-0;
+	 phases CN;
+	 from 391-560870;
+	 to 391-1265845;
+	 length 61.957584;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859605-0;
+	 phases AN;
+	 from 391-559908;
+	 to 391-560547;
+	 length 187.635476;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859606-0;
+	 phases BN;
+	 from 391-559619;
+	 to 391-560546;
+	 length 190.454666;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859607-0;
+	 phases CN;
+	 from 391-559909;
+	 to 391-560545;
+	 length 191.516587;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859663-0;
+	 phases AN;
+	 from 391-560856;
+	 to 395-759830;
+	 length 62.340948;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859664-0;
+	 phases BN;
+	 from 391-560857;
+	 to 395-759830;
+	 length 58.374442;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859665-0;
+	 phases CN;
+	 from 391-560855;
+	 to 395-759830;
+	 length 52.632297;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859669-0;
+	 phases AN;
+	 from 391-560856;
+	 to 391-561230;
+	 length 183.105952;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859670-0;
+	 phases BN;
+	 from 391-560857;
+	 to 391-561231;
+	 length 173.803934;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 394-859671-0;
+	 phases CN;
+	 from 391-560855;
+	 to 391-561228;
+	 length 192.313969;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-1175269-0;
+	 phases AN;
+	 from 395-758995;
+	 to 391-560856;
+	 length 425.739750;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-1175274-0;
+	 phases BN;
+	 from 395-758997;
+	 to 391-560857;
+	 length 425.753154;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-1175278-0;
+	 phases CN;
+	 from 395-758999;
+	 to 391-560855;
+	 length 436.655152;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-2150259-0;
+	 phases AN;
+	 from 395-2135214;
+	 to 391-1314806;
+	 length 650.510624;
+	 configuration underground_line_config_AN_34_34;
+	 } 
+
+object underground_line {
+	 name 411-2150260-0;
+	 phases BN;
+	 from 395-2135216;
+	 to 391-1314805;
+	 length 641.156435;
+	 configuration underground_line_config_BN_34_34;
+	 } 
+
+object underground_line {
+	 name 411-2150261-0;
+	 phases CN;
+	 from 395-2135218;
+	 to 391-1314804;
+	 length 654.937152;
+	 configuration underground_line_config_CN_34_34;
+	 } 
+
+object underground_line {
+	 name 411-2150262-0;
+	 phases AN;
+	 from 395-2135220;
+	 to 395-2135221;
+	 length 685.958894;
+	 configuration underground_line_config_AN_108_108;
+	 } 
+
+object underground_line {
+	 name 411-2150263-0;
+	 phases BN;
+	 from 395-2135222;
+	 to 395-2135223;
+	 length 695.192101;
+	 configuration underground_line_config_BN_108_108;
+	 } 
+
+object underground_line {
+	 name 411-2150264-0;
+	 phases CN;
+	 from 395-2135224;
+	 to 395-2135225;
+	 length 710.099313;
+	 configuration underground_line_config_CN_108_108;
+	 } 
+
+object underground_line {
+	 name 411-732703-0;
+	 phases AN;
+	 from 395-757001;
+	 to 395-757002;
+	 length 896.444373;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732944-0;
+	 phases BN;
+	 from 395-757003;
+	 to 395-757002;
+	 length 872.902300;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732945-0;
+	 phases CN;
+	 from 395-757245;
+	 to 395-757002;
+	 length 855.013784;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732946-0;
+	 phases AN;
+	 from 395-757247;
+	 to 395-757248;
+	 length 783.619483;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732947-0;
+	 phases BN;
+	 from 395-757249;
+	 to 395-757248;
+	 length 774.552349;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732948-0;
+	 phases CN;
+	 from 395-757251;
+	 to 395-757248;
+	 length 771.152638;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732949-0;
+	 phases AN;
+	 from 395-757253;
+	 to 395-757254;
+	 length 153.613618;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732950-0;
+	 phases BN;
+	 from 395-757255;
+	 to 395-757254;
+	 length 144.968402;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732951-0;
+	 phases CN;
+	 from 395-757257;
+	 to 395-757254;
+	 length 141.991343;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732952-0;
+	 phases AN;
+	 from 395-757258;
+	 to 391-559908;
+	 length 206.924568;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-732953-0;
+	 phases BN;
+	 from 395-757260;
+	 to 391-559619;
+	 length 200.877107;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-732954-0;
+	 phases CN;
+	 from 395-757262;
+	 to 391-559909;
+	 length 209.079652;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-733588-0;
+	 phases AN;
+	 from 395-758542;
+	 to 395-758543;
+	 length 674.737540;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-733589-0;
+	 phases BN;
+	 from 395-758544;
+	 to 395-758543;
+	 length 658.562060;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-733590-0;
+	 phases CN;
+	 from 395-758546;
+	 to 395-758543;
+	 length 648.058349;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-734256-0;
+	 phases AN;
+	 from 395-758966;
+	 to 391-560875;
+	 length 194.442118;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734257-0;
+	 phases BN;
+	 from 395-758968;
+	 to 391-560874;
+	 length 182.494087;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734258-0;
+	 phases CN;
+	 from 395-758970;
+	 to 391-560873;
+	 length 185.036223;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734259-0;
+	 phases AN;
+	 from 395-758971;
+	 to 391-560884;
+	 length 387.302748;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734260-0;
+	 phases BN;
+	 from 395-758973;
+	 to 391-560883;
+	 length 374.300188;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734261-0;
+	 phases CN;
+	 from 395-758975;
+	 to 391-560882;
+	 length 375.444081;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734277-0;
+	 phases AN;
+	 from 395-759007;
+	 to 395-759010;
+	 length 454.374045;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734278-0;
+	 phases BN;
+	 from 395-759009;
+	 to 395-759010;
+	 length 455.086261;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734279-0;
+	 phases CN;
+	 from 395-759011;
+	 to 395-759010;
+	 length 461.482285;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734280-0;
+	 phases AN;
+	 from 395-759013;
+	 to 395-759014;
+	 length 230.384876;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734281-0;
+	 phases BN;
+	 from 395-759015;
+	 to 395-759016;
+	 length 230.015608;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734282-0;
+	 phases CN;
+	 from 395-759017;
+	 to 395-759018;
+	 length 235.317835;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734292-0;
+	 phases AN;
+	 from 395-759032;
+	 to 391-560902;
+	 length 506.714464;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734293-0;
+	 phases BN;
+	 from 395-759034;
+	 to 391-560900;
+	 length 522.397231;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734294-0;
+	 phases CN;
+	 from 395-759036;
+	 to 391-560901;
+	 length 526.337381;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734634-0;
+	 phases AN;
+	 from 395-759529;
+	 to 391-561199;
+	 length 45.722593;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734635-0;
+	 phases BN;
+	 from 395-759530;
+	 to 391-561197;
+	 length 47.859781;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734636-0;
+	 phases CN;
+	 from 395-759531;
+	 to 391-561196;
+	 length 44.542156;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734880-0;
+	 phases AN;
+	 from 395-759558;
+	 to 391-561203;
+	 length 49.894342;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734881-0;
+	 phases BN;
+	 from 395-759559;
+	 to 391-561201;
+	 length 39.869629;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734882-0;
+	 phases CN;
+	 from 395-759560;
+	 to 391-561202;
+	 length 42.790025;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734886-0;
+	 phases AN;
+	 from 395-759820;
+	 to 391-561222;
+	 length 38.626565;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734887-0;
+	 phases BN;
+	 from 395-759821;
+	 to 391-561223;
+	 length 40.826081;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-734888-0;
+	 phases CN;
+	 from 395-759822;
+	 to 391-561221;
+	 length 37.325337;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name 411-887842-0;
+	 phases AN;
+	 from 500-908389;
+	 to 391-670933;
+	 length 46.392376;
+	 configuration underground_line_config_AN_108_108;
+	 } 
+
+object underground_line {
+	 name 411-887843-0;
+	 phases BN;
+	 from 500-908391;
+	 to 391-670932;
+	 length 32.781605;
+	 configuration underground_line_config_BN_108_108;
+	 } 
+
+object underground_line {
+	 name 411-887844-0;
+	 phases CN;
+	 from 500-908393;
+	 to 391-670934;
+	 length 45.171793;
+	 configuration underground_line_config_CN_108_108;
+	 } 
+
+object underground_line {
+	 name A-395-2135214;
+	 phases AN;
+	 from MID-395-2135216;
+	 to 395-2135214;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-2135220;
+	 phases AN;
+	 from MID-395-2135222;
+	 to 395-2135220;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-757001;
+	 phases AN;
+	 from MID-395-757003;
+	 to 395-757001;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-757247;
+	 phases AN;
+	 from MID-395-757249;
+	 to 395-757247;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-757253;
+	 phases AN;
+	 from MID-395-757255;
+	 to 395-757253;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-757258;
+	 phases AN;
+	 from MID-395-757260;
+	 to 395-757258;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-758542;
+	 phases AN;
+	 from MID-395-758544;
+	 to 395-758542;
+	 length 10.000000;
+	 configuration underground_line_config_AN_108_108;
+	 } 
+
+object underground_line {
+	 name A-395-758966;
+	 phases AN;
+	 from MID-395-758968;
+	 to 395-758966;
+	 length 10.000000;
+	 configuration underground_line_config_AN_108_108;
+	 } 
+
+object underground_line {
+	 name A-395-758971;
+	 phases AN;
+	 from MID-395-758973;
+	 to 395-758971;
+	 length 10.000000;
+	 configuration underground_line_config_AN_108_108;
+	 } 
+
+object underground_line {
+	 name A-395-758995;
+	 phases AN;
+	 from MID-395-758997;
+	 to 395-758995;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-759007;
+	 phases AN;
+	 from MID-395-759009;
+	 to 395-759007;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-759013;
+	 phases AN;
+	 from MID-395-759015;
+	 to 395-759013;
+	 length 10.000000;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name A-395-759014;
+	 phases AN;
+	 from MID-395-759016;
+	 to 395-759014;
+	 length 10.000000;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name A-395-759032;
+	 phases AN;
+	 from MID-395-759034;
+	 to 395-759032;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-759529;
+	 phases AN;
+	 from MID-395-759530;
+	 to 395-759529;
+	 length 10.000000;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name A-395-759558;
+	 phases AN;
+	 from MID-395-759559;
+	 to 395-759558;
+	 length 10.000000;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name A-395-759820;
+	 phases AN;
+	 from MID-395-759821;
+	 to 395-759820;
+	 length 10.000000;
+	 configuration underground_line_config_AN_4_4;
+	 } 
+
+object underground_line {
+	 name B-395-2135216;
+	 phases BN;
+	 from MID-395-2135216;
+	 to 395-2135216;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-2135222;
+	 phases BN;
+	 from MID-395-2135222;
+	 to 395-2135222;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-757003;
+	 phases BN;
+	 from MID-395-757003;
+	 to 395-757003;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-757249;
+	 phases BN;
+	 from MID-395-757249;
+	 to 395-757249;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-757255;
+	 phases BN;
+	 from MID-395-757255;
+	 to 395-757255;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-757260;
+	 phases BN;
+	 from MID-395-757260;
+	 to 395-757260;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-758544;
+	 phases BN;
+	 from MID-395-758544;
+	 to 395-758544;
+	 length 10.000000;
+	 configuration underground_line_config_BN_108_108;
+	 } 
+
+object underground_line {
+	 name B-395-758968;
+	 phases BN;
+	 from MID-395-758968;
+	 to 395-758968;
+	 length 10.000000;
+	 configuration underground_line_config_BN_108_108;
+	 } 
+
+object underground_line {
+	 name B-395-758973;
+	 phases BN;
+	 from MID-395-758973;
+	 to 395-758973;
+	 length 10.000000;
+	 configuration underground_line_config_BN_108_108;
+	 } 
+
+object underground_line {
+	 name B-395-758997;
+	 phases BN;
+	 from MID-395-758997;
+	 to 395-758997;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-759009;
+	 phases BN;
+	 from MID-395-759009;
+	 to 395-759009;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-759015;
+	 phases BN;
+	 from MID-395-759015;
+	 to 395-759015;
+	 length 10.000000;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name B-395-759016;
+	 phases BN;
+	 from MID-395-759016;
+	 to 395-759016;
+	 length 10.000000;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name B-395-759034;
+	 phases BN;
+	 from MID-395-759034;
+	 to 395-759034;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-759530;
+	 phases BN;
+	 from MID-395-759530;
+	 to 395-759530;
+	 length 10.000000;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name B-395-759559;
+	 phases BN;
+	 from MID-395-759559;
+	 to 395-759559;
+	 length 10.000000;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name B-395-759821;
+	 phases BN;
+	 from MID-395-759821;
+	 to 395-759821;
+	 length 10.000000;
+	 configuration underground_line_config_BN_4_4;
+	 } 
+
+object underground_line {
+	 name C-395-2135218;
+	 phases CN;
+	 from MID-395-2135216;
+	 to 395-2135218;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-2135224;
+	 phases CN;
+	 from MID-395-2135222;
+	 to 395-2135224;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-757245;
+	 phases CN;
+	 from MID-395-757003;
+	 to 395-757245;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-757251;
+	 phases CN;
+	 from MID-395-757249;
+	 to 395-757251;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-757257;
+	 phases CN;
+	 from MID-395-757255;
+	 to 395-757257;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-757262;
+	 phases CN;
+	 from MID-395-757260;
+	 to 395-757262;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-758546;
+	 phases CN;
+	 from MID-395-758544;
+	 to 395-758546;
+	 length 10.000000;
+	 configuration underground_line_config_CN_108_108;
+	 } 
+
+object underground_line {
+	 name C-395-758970;
+	 phases CN;
+	 from MID-395-758968;
+	 to 395-758970;
+	 length 10.000000;
+	 configuration underground_line_config_CN_108_108;
+	 } 
+
+object underground_line {
+	 name C-395-758975;
+	 phases CN;
+	 from MID-395-758973;
+	 to 395-758975;
+	 length 10.000000;
+	 configuration underground_line_config_CN_108_108;
+	 } 
+
+object underground_line {
+	 name C-395-758999;
+	 phases CN;
+	 from MID-395-758997;
+	 to 395-758999;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-759011;
+	 phases CN;
+	 from MID-395-759009;
+	 to 395-759011;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-759017;
+	 phases CN;
+	 from MID-395-759015;
+	 to 395-759017;
+	 length 10.000000;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name C-395-759018;
+	 phases CN;
+	 from MID-395-759016;
+	 to 395-759018;
+	 length 10.000000;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name C-395-759036;
+	 phases CN;
+	 from MID-395-759034;
+	 to 395-759036;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-759531;
+	 phases CN;
+	 from MID-395-759530;
+	 to 395-759531;
+	 length 10.000000;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name C-395-759560;
+	 phases CN;
+	 from MID-395-759559;
+	 to 395-759560;
+	 length 10.000000;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+
+object underground_line {
+	 name C-395-759822;
+	 phases CN;
+	 from MID-395-759821;
+	 to 395-759822;
+	 length 10.000000;
+	 configuration underground_line_config_CN_4_4;
+	 } 
+

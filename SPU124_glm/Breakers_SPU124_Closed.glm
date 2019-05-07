@@ -12,7 +12,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser2;
+	 name recloser_Breaker Recloser_SPU124_1;
 	 phases "ABC";
 	 from 500-2975051;
 	 to Breaker_392-111430;
@@ -22,7 +22,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser3;
+	 name recloser_Breaker Recloser_SPU124_2;
 	 phases "ABC";
 	 from 500-2975361;
 	 to Breaker_392-111426;
@@ -32,7 +32,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser4;
+	 name recloser_Breaker Recloser_SPU124_3;
 	 phases "ABC";
 	 from 500-2974791;
 	 to Breaker_392-111416;
@@ -42,7 +42,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser5;
+	 name recloser_Breaker Recloser_SPU124_4;
 	 phases "ABC";
 	 from 500-2975363;
 	 to Breaker_392-111417;
@@ -52,7 +52,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser6;
+	 name recloser_Breaker Recloser_SPU124_5;
 	 phases "ABC";
 	 from 500-2975366;
 	 to Breaker_392-111421;
@@ -62,37 +62,40 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser7;
+	 name recloser_Breaker Recloser_SPU124_6;
 	 phases "ABC";
 	 from 500-2975367;
 	 to Breaker_392-111419;
 	 retry_time 1s;
 	 max_number_of_tries 3;
+	 status OPEN;
 }
 
 
 object recloser {
-	 name recloser_Breaker Recloser8;
+	 name recloser_Breaker Recloser_SPU124_7;
 	 phases "ABC";
 	 from 500-2975367;
 	 to Breaker_392-111420;
 	 retry_time 1s;
 	 max_number_of_tries 3;
+	 status OPEN;
 }
 
 
 object recloser {
-	 name recloser_Breaker Recloser9;
+	 name recloser_Breaker Recloser_SPU124_8;
 	 phases "ABC";
 	 from 500-2975365;
 	 to Breaker_392-111419;
 	 retry_time 1s;
 	 max_number_of_tries 3;
+	 status OPEN;
 }
 
 
 object recloser {
-	 name recloser_Breaker Recloser10;
+	 name recloser_Breaker Recloser_SPU124_9;
 	 phases "ABC";
 	 from 500-2975363;
 	 to Breaker_392-111423;
@@ -102,7 +105,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser11;
+	 name recloser_Breaker Recloser_SPU124_10;
 	 phases "ABC";
 	 from 392-111423;
 	 to Breaker_392-111424;
@@ -112,7 +115,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_Breaker Recloser12;
+	 name recloser_Breaker Recloser_SPU124_11;
 	 phases "ABC";
 	 from 500-2975042;
 	 to Breaker_392-111425;

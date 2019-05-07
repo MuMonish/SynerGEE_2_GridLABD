@@ -1,0 +1,33 @@
+//**Loads_SPU122:
+
+
+object load {
+	 parent 500-230142;
+	 name LOAD_389-3020482-0;
+	 phases ABCN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+//**End Loads_SPU122** 

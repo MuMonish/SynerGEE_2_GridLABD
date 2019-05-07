@@ -1,0 +1,219 @@
+//**Underground Lines forSPU122:
+
+
+object underground_line {
+	 name 394-806733;
+	 phases AN;
+	 from 402-458138;
+	 to 500-635149;
+	 length 10.000000;
+	 configuration underground_line_config_AN_90_90;
+	 } 
+
+object underground_line {
+	 name 394-806735;
+	 phases BN;
+	 from 402-458138;
+	 to 500-635151;
+	 length 10.000000;
+	 configuration underground_line_config_BN_90_90;
+	 } 
+
+object underground_line {
+	 name 394-806737;
+	 phases CN;
+	 from 402-458138;
+	 to 500-635153;
+	 length 10.000000;
+	 configuration underground_line_config_CN_90_90;
+	 } 
+
+object underground_line {
+	 name 411-2150268-0;
+	 phases AN;
+	 from 395-2135232;
+	 to 395-2135235;
+	 length 342.252795;
+	 configuration underground_line_config_AN_108_108;
+	 } 
+
+object underground_line {
+	 name 411-2150269-0;
+	 phases BN;
+	 from 395-2135234;
+	 to 395-2135235;
+	 length 354.104337;
+	 configuration underground_line_config_BN_108_108;
+	 } 
+
+object underground_line {
+	 name 411-2150270-0;
+	 phases CN;
+	 from 395-2135236;
+	 to 395-2135235;
+	 length 371.638630;
+	 configuration underground_line_config_CN_108_108;
+	 } 
+
+object underground_line {
+	 name 411-2162968-0;
+	 phases CN;
+	 from 395-1373663;
+	 to 395-2147902;
+	 length 2903.928084;
+	 configuration underground_line_config_CN_104_104;
+	 } 
+
+object underground_line {
+	 name 411-2162969-0;
+	 phases BN;
+	 from 395-1373661;
+	 to 395-2147902;
+	 length 2881.410260;
+	 configuration underground_line_config_BN_104_104;
+	 } 
+
+object underground_line {
+	 name 411-2162970-0;
+	 phases AN;
+	 from 395-1373643;
+	 to 395-2147902;
+	 length 2864.572252;
+	 configuration underground_line_config_AN_104_104;
+	 } 
+
+object underground_line {
+	 name 411-732691-0;
+	 phases AN;
+	 from 500-635149;
+	 to 395-756992;
+	 length 1334.620277;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732695-0;
+	 phases CN;
+	 from 500-635153;
+	 to 395-756992;
+	 length 1336.003322;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name 411-732698-0;
+	 phases BN;
+	 from 500-635151;
+	 to 395-756992;
+	 length 1331.010526;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-1373643;
+	 phases AN;
+	 from MID-395-1373661;
+	 to 395-1373643;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-2135221;
+	 phases AN;
+	 from MID-395-2135223;
+	 to 395-2135221;
+	 length 10.000000;
+	 configuration underground_line_config_AN_108_108;
+	 } 
+
+object underground_line {
+	 name A-395-2135232;
+	 phases AN;
+	 from MID-395-2135234;
+	 to 395-2135232;
+	 length 10.000000;
+	 configuration underground_line_config_AN_105_105;
+	 } 
+
+object underground_line {
+	 name A-395-2147887;
+	 phases AN;
+	 from MID-395-2147889;
+	 to 395-2147887;
+	 length 10.000000;
+	 configuration underground_line_config_AN_104_104;
+	 } 
+
+object underground_line {
+	 name B-395-1373661;
+	 phases BN;
+	 from MID-395-1373661;
+	 to 395-1373661;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-2135223;
+	 phases BN;
+	 from MID-395-2135223;
+	 to 395-2135223;
+	 length 10.000000;
+	 configuration underground_line_config_BN_108_108;
+	 } 
+
+object underground_line {
+	 name B-395-2135234;
+	 phases BN;
+	 from MID-395-2135234;
+	 to 395-2135234;
+	 length 10.000000;
+	 configuration underground_line_config_BN_105_105;
+	 } 
+
+object underground_line {
+	 name B-395-2147889;
+	 phases BN;
+	 from MID-395-2147889;
+	 to 395-2147889;
+	 length 10.000000;
+	 configuration underground_line_config_BN_104_104;
+	 } 
+
+object underground_line {
+	 name C-395-1373663;
+	 phases CN;
+	 from MID-395-1373661;
+	 to 395-1373663;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-2135225;
+	 phases CN;
+	 from MID-395-2135223;
+	 to 395-2135225;
+	 length 10.000000;
+	 configuration underground_line_config_CN_108_108;
+	 } 
+
+object underground_line {
+	 name C-395-2135236;
+	 phases CN;
+	 from MID-395-2135234;
+	 to 395-2135236;
+	 length 10.000000;
+	 configuration underground_line_config_CN_105_105;
+	 } 
+
+object underground_line {
+	 name C-395-2147891;
+	 phases CN;
+	 from MID-395-2147889;
+	 to 395-2147891;
+	 length 10.000000;
+	 configuration underground_line_config_CN_104_104;
+	 } 
+

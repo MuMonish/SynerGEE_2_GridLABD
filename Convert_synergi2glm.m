@@ -1,8 +1,7 @@
+function Convert_synergi2glm(Feedername, AllClosed)
 
-clc
-clearvars
-
-Feedername = 'SPU125'
+%Feedername = 'SPU125'
+%AllClosed = true
 NonimalVolt=7970;
 
 %% setting up connection with SynerGEE DataBase
@@ -185,7 +184,7 @@ if contains_caps
 end
 % breakers regulators fuses
 if contains_breakers || contains_regulators || contains_fuses
-    making_Breaker_Switch_Regulator_Fuse(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
+    making_Breaker_Switch_Regulator_Fuse(model_dir_name,Feedername,NonimalVolt,glm_dir_name, AllClosed);
 end
 % nodes
 making_nodes(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
@@ -210,3 +209,6 @@ if contains_UG
 end
 %making the main header glm file
 making_header(Feedername,glm_dir_name,contains_UG);
+
+clearvars
+end

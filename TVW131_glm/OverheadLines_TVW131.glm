@@ -1,0 +1,228 @@
+//**Overhead Lines forTVW131:
+
+
+object overhead_line {
+	 name 389-2584387-0;
+	 phases ABCN;
+	 from Reg_TVW131;
+	 to 416-52180;
+	 length 37.267867;
+	 configuration overhead_line_config_ABCN_86_86;
+	 } 
+
+object overhead_line {
+	 name 389-2584388-0;
+	 phases ABCN;
+	 from Fuse_402-1369238;
+	 to 402-1369238;
+	 length 27.774464;
+	 configuration overhead_line_config_ABCN_86_86;
+	 } 
+
+object overhead_line {
+	 name TIE-391-1323823;
+	 phases ABCN;
+	 from 395-1679745;
+	 to 391-1323823;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name TIE-391-1323836;
+	 phases ABCN;
+	 from 395-1677163;
+	 to 391-1323836;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_64_64;
+	 } 
+
+object overhead_line {
+	 name TIE-391-1324412;
+	 phases ABCN;
+	 from 395-1677754;
+	 to 391-1324412;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name TIE-391-1332457;
+	 phases ABCN;
+	 from 395-1686124;
+	 to 391-1332457;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_34_34;
+	 } 
+
+object overhead_line {
+	 name TIE-391-1366997;
+	 phases ABCN;
+	 from 395-1724480;
+	 to 391-1366997;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name TIE-391-1708485;
+	 phases ABCN;
+	 from 395-2103743;
+	 to 391-1708485;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name TIE-391-670943;
+	 phases ABCN;
+	 from 395-1677743;
+	 to 391-670943;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-19521;
+	 phases ABCN;
+	 from 391-1323836;
+	 to MID-395-1677184;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_64_64;
+	 } 
+
+object overhead_line {
+	 name UGSW-19523;
+	 phases ABCN;
+	 from 391-1323836;
+	 to MID-395-1677189;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_64_64;
+	 } 
+
+object overhead_line {
+	 name UGSW-19842;
+	 phases ABCN;
+	 from 391-1324412;
+	 to MID-395-1677755;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-20801;
+	 phases ABCN;
+	 from 391-1323823;
+	 to MID-395-1677172;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-20803;
+	 phases ABCN;
+	 from 391-1323823;
+	 to MID-395-1677167;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-22401;
+	 phases ABCN;
+	 from 391-1332457;
+	 to MID-395-1715902;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_34_34;
+	 } 
+
+object overhead_line {
+	 name UGSW-22402;
+	 phases ABCN;
+	 from 391-1332457;
+	 to MID-395-1715908;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_34_34;
+	 } 
+
+object overhead_line {
+	 name UGSW-22403;
+	 phases ABCN;
+	 from 391-1332457;
+	 to MID-395-1715914;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_34_34;
+	 } 
+
+object overhead_line {
+	 name UGSW-23365;
+	 phases ABCN;
+	 from 391-1324412;
+	 to MID-395-1724477;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-2562;
+	 phases ABCN;
+	 from 391-670943;
+	 to MID-395-907966;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-2573;
+	 phases ABCN;
+	 from 391-670943;
+	 to MID-395-901259;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-25921;
+	 phases ABCN;
+	 from 391-1366997;
+	 to MID-395-1724495;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-28161;
+	 phases ABCN;
+	 from 391-1323823;
+	 to MID-395-1823678;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-34563;
+	 phases ABCN;
+	 from 391-1708485;
+	 to MID-395-2103748;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-34565;
+	 phases ABCN;
+	 from 391-1708485;
+	 to MID-395-2103742;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+
+object overhead_line {
+	 name UGSW-6087;
+	 phases ABCN;
+	 from 391-670943;
+	 to MID-395-1011427;
+	 length 10.000000;
+	 configuration overhead_line_config_ABCN_10_10;
+	 } 
+

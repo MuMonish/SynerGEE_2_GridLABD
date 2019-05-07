@@ -1,0 +1,1570 @@
+//**Loads_TVW131:
+
+
+object load {
+	 parent 391-676696;
+	 name LOAD_394-1030092-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-676695;
+	 name LOAD_394-1030093-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-676697;
+	 name LOAD_394-1030094-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-676744;
+	 name LOAD_394-1030147-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-261646;
+	 name LOAD_394-1030154-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1079290;
+	 name LOAD_394-1727125-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1095639;
+	 name LOAD_394-1753452-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1095641;
+	 name LOAD_394-1753453-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1095640;
+	 name LOAD_394-1753454-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1102644;
+	 name LOAD_394-1853637-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1102355;
+	 name LOAD_394-1853639-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1102353;
+	 name LOAD_394-1853641-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1179831;
+	 name LOAD_394-1862282-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1179828;
+	 name LOAD_394-1862283-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1179829;
+	 name LOAD_394-1862284-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1182202;
+	 name LOAD_394-1865344-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1182200;
+	 name LOAD_394-1865345-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1182203;
+	 name LOAD_394-1865346-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323843;
+	 name LOAD_394-2059488-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323877;
+	 name LOAD_394-2059490-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323876;
+	 name LOAD_394-2059492-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1434872;
+	 name LOAD_394-2164826-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1434873;
+	 name LOAD_394-2164827-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1434874;
+	 name LOAD_394-2164828-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1643876;
+	 name LOAD_394-2398784-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1643878;
+	 name LOAD_394-2398786-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1643877;
+	 name LOAD_394-2398788-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1367009;
+	 name LOAD_394-2438152-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1367011;
+	 name LOAD_394-2438154-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1367010;
+	 name LOAD_394-2438156-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1367007;
+	 name LOAD_394-2438158-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1367005;
+	 name LOAD_394-2438160-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1367006;
+	 name LOAD_394-2438162-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-261650;
+	 name LOAD_394-809383-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-261651;
+	 name LOAD_394-809385-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-261652;
+	 name LOAD_394-809643-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-544231;
+	 name LOAD_394-836074-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-544228;
+	 name LOAD_394-836075-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-544230;
+	 name LOAD_394-836076-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-562808;
+	 name LOAD_394-861196-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-562810;
+	 name LOAD_394-861197-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-562809;
+	 name LOAD_394-861198-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-562813;
+	 name LOAD_394-861208-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-562812;
+	 name LOAD_394-861210-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-562814;
+	 name LOAD_394-861212-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323884;
+	 name LOAD_411-1730643-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323886;
+	 name LOAD_411-1730644-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323885;
+	 name LOAD_411-1730645-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323879;
+	 name LOAD_411-1730646-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323882;
+	 name LOAD_411-1730647-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1323881;
+	 name LOAD_411-1730648-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1600654;
+	 name LOAD_411-2120412-0;
+	 phases AN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1600652;
+	 name LOAD_411-2120413-0;
+	 phases BN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+object load {
+	 parent 391-1600651;
+	 name LOAD_411-2120414-0;
+	 phases CN;
+	 base_power_A 0.000000;
+	 base_power_B 0.000000;
+	 base_power_C 0.000000;
+	 power_pf_A 0.000000;
+	 current_pf_A 0.000000;
+	 impedance_pf_A 0.000000;
+	 power_pf_B 0.000000;
+	 current_pf_B 0.000000;
+	 impedance_pf_B 0.000000;
+	 power_pf_C 0.000000;
+	 current_pf_C 0.000000;
+	 impedance_pf_C 0.000000;
+	 power_fraction_A 0.50;
+	 current_fraction_A 0.10;
+	 impedance_fraction_A 0.40;
+	 power_fraction_B 0.50;
+	 current_fraction_B 0.10;
+	 impedance_fraction_B 0.40;
+	 power_fraction_C 0.50;
+	 current_fraction_C 0.10;
+	 impedance_fraction_C 0.40;
+	 nominal_voltage 7970.00;
+}
+
+
+//**End Loads_TVW131** 

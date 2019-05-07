@@ -14,31 +14,6 @@ object transformer_configuration {
 
 
 
-object transformer_configuration {
-	 name Xfmr_Config_114;
-	 connect_type WYE_WYE;
-	 install_type PADMOUNT;
-	 primary_voltage 7.621024e+03;
-	 secondary_voltage 2.401777e+03;
-	 power_rating 750;
-	 impedance 2.133333e-03+8.000000e-03j;
-	 no_load_loss 8.000000e-01;
-}
-
-
-
-object transformer_configuration {
-	 name Xfmr_Config_114;
-	 connect_type WYE_WYE;
-	 install_type PADMOUNT;
-	 primary_voltage 7.621024e+03;
-	 secondary_voltage 2.401777e+03;
-	 power_rating 750;
-	 impedance 2.133333e-03+8.000000e-03j;
-	 no_load_loss 8.000000e-01;
-}
-
-
 
 object transformer  {
 	 name Trafo_415-340905;
@@ -67,4 +42,4 @@ object transformer  {
 }
 
 
-//**End Transformers_TUR111** 
+//**End Transformers_TUR111**

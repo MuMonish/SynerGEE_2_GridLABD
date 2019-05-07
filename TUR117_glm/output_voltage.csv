@@ -1,4 +1,4 @@
-# output_voltage.csv run at 2019-05-03 14:27:49 PDT on 723 nodes
+# output_voltage.csv run at 2019-05-07 15:53:07 PDT on 723 nodes
 node_name,voltA_mag,voltA_angle,voltB_mag,voltB_angle,voltC_mag,voltC_angle
 Cap_393-73970,7649.903097,-0.005456,7655.298589,4.182712,7615.692664,2.090020
 Cap_393-70114,7654.101238,-0.004833,7659.998773,4.183273,7620.791846,2.090639

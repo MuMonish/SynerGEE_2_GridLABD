@@ -5,22 +5,22 @@ load(strcat(FeederName,'_SectionFromTo.mat'));
 %load('SectionFromTo.mat');
 [Node_feeder,Node_feeder_text]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
 
-%% Plotting Feeder Topology and getting downstram low voltage nodes on Transformer secondary
+%% Plotting Feeder Topology and getting downstream low voltage nodes on Transformer secondary
 SecFromTo_modified = SecFromTo;
 Node_from_to_modified = Node_feeder_text(2:end,3:4);
 
-[~, ind] = unique(SecFromTo(:,1), 'rows');
+[~, ind] = unique(SecFromTo(:,1));
 duplicate_ind = setdiff(1:size(SecFromTo, 1), ind);
 
 for i =1:length(duplicate_ind)
     duplicates= find(strcmp(SecFromTo(:,1),SecFromTo(duplicate_ind(i),1)));
-    for j = length(duplicates)-1:1
+    for j = 1:length(duplicates)-1 % THIS SHOULDN'T WORK: length(duplicates)-1:1
         SecFromTo_modified(duplicates(j+1),3) = SecFromTo(duplicates(j),5);
     end
 end
 
 
-for s = 1:length(SecFromTo_modified)
+for s = 1:size(SecFromTo_modified,1) % was length(SecFromTo_modified), which measures wrong dimension
     for n=2:size(Node_feeder_text,1)
         if (strcmp(SecFromTo_modified(s,1),Node_feeder_text(n,1))==1)
             if (strcmp(SecFromTo_modified(s,2),Node_feeder_text(n,3))==1)
@@ -64,8 +64,8 @@ low_voltage_nodes_volt =[];
 for i = 1:length(Index)
     downstream_nodes = nearest(G,SecFromTo_modified(Index(i),5),inf);
     low_voltage = SecFromTo_modified(Index(i),6);
-    low_voltage_nodes(:,1) = [low_voltage_nodes;SecFromTo_modified(Index(i),5);downstream_nodes];
-    low_voltage_nodes_volt(:,1)= [low_voltage_nodes_volt;cell2mat(low_voltage);cell2mat(low_voltage)*ones(length(downstream_nodes),1)];
+    low_voltage_nodes = [low_voltage_nodes;SecFromTo_modified(Index(i),5);downstream_nodes];
+    low_voltage_nodes_volt= [low_voltage_nodes_volt;cell2mat(low_voltage);cell2mat(low_voltage)*ones(length(downstream_nodes),1)];
 end
 
 highlight(p,low_voltage_nodes,'NodeColor','g');
