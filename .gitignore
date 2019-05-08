@@ -1,5 +1,9 @@
+*.glm
+*.csv
 *.xlsx
 *.mat
 *.asv
 *.ldb
 *.mdb
+*.xml
+*.fig
