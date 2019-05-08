@@ -9,8 +9,8 @@
 
 clock {
 	 timezone PST+8PDT;
-	 starttime '2019-05-06 15:06:02';
-	 stoptime '2019-05-06 15:06:02';
+	 starttime '2019-05-07 15:52:24';
+	 stoptime '2019-05-07 15:52:24';
 }
 
 

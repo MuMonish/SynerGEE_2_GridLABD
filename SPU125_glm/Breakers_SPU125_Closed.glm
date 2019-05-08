@@ -12,7 +12,7 @@ object recloser {
 
 
 object recloser {
-	 name recloser_recloser_Breaker Recloser_SPU125_2;
+	 name recloser_Breaker Recloser_SPU125_1;
 	 phases "ABCN";
 	 from 403-470566;
 	 to Breaker_392-89014;
@@ -22,18 +22,17 @@ object recloser {
 
 
 object recloser {
-	 name recloser_recloser_Breaker Recloser_SPU125_2;
+	 name recloser_Breaker Recloser_SPU125_2;
 	 phases "ABCN";
 	 from 500-712882;
 	 to Breaker_392-89655;
 	 retry_time 1s;
 	 max_number_of_tries 3;
-	 status OPEN;
 }
 
 
 object recloser {
-	 name recloser_recloser_Breaker Recloser_SPU125_2;
+	 name recloser_Breaker Recloser_SPU125_3;
 	 phases "ABC";
 	 from 406-905990;
 	 to Breaker_392-106294;
@@ -43,13 +42,12 @@ object recloser {
 
 
 object recloser {
-	 name recloser_recloser_Breaker Recloser_SPU125_2;
+	 name recloser_Breaker Recloser_SPU125_4;
 	 phases "ABC";
 	 from 392-106294;
 	 to Breaker_392-106314;
 	 retry_time 1s;
 	 max_number_of_tries 3;
-	 status OPEN;
 }
 
 
