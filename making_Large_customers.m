@@ -1,10 +1,10 @@
 
-function Make_Load=making_Large_customers(dir_name,FeederName,NonimalVolt,glm_dir_name)
+function Make_Load=making_Large_customers(dir_name,FeederName,NonimalVolt,glm_dir_name,low_voltage_nodes,low_voltage_nodes_volt)
 
 [LargeCustMatrix,LargeCustText]=xlsread(strcat(dir_name,'\',FeederName,'_Large_customers.xlsx'));
 [SectionMatrix,SectionText]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
-workspace = strcat(FeederName,'_Node_voltages.mat');
-load(workspace);
+%workspace = strcat(FeederName,'_Node_voltages.mat');
+%load(workspace);
 
 GlmFileName=strcat(glm_dir_name,'\','Large_customers_',FeederName,'.glm')
 fid = fopen(GlmFileName,'wt');
@@ -152,8 +152,8 @@ for i = 1:LoadsN
 end
 fprintf(fid,strcat('//**End Loads_',FeederName,'** %s \n\n\n'));
 
-save Load_LC;
+% save Load_LC;
 
-save ('Load_ratio_LC.mat','LDSect_Node','LargeCustMatrix','LD_ZIP')
+% save ('Load_ratio_LC.mat','LDSect_Node','LargeCustMatrix','LD_ZIP')
 
 end

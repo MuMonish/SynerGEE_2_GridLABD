@@ -195,37 +195,30 @@ if contains_breakers || contains_regulators || contains_fuses || contains_switch
                     % loads nothing
     % save SecFromTo as FeederName_SectionFromTo; saves file for each
     % component type
-    making_Breaker_Switch_Regulator_Fuse(model_dir_name,Feedername,NonimalVolt,glm_dir_name, AllClosed);
+   SecFromTo = making_Breaker_Switch_Regulator_Fuse(model_dir_name,Feedername,NonimalVolt,glm_dir_name, AllClosed);
 end
 % nodes
-                    % loads FeederName_SectionFromTo
-making_nodes(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
+[low_voltage_nodes, low_voltage_nodes_volt]=making_nodes(model_dir_name,Feedername,NonimalVolt,glm_dir_name,SecFromTo);
 if contains_Large_customers
-                    % loads FeederName_Node_voltages
-    making_Large_customers(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
+    % Large Customer Loads
+    making_Large_customers(model_dir_name,Feedername,NonimalVolt,glm_dir_name,low_voltage_nodes,low_voltage_nodes_volt);
 end
 if contains_loads
-                    % loads FeederName_Node_voltages
-    making_Load(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
+    % Loads
+    making_Load(model_dir_name,Feedername,NonimalVolt,glm_dir_name,low_voltage_nodes,low_voltage_nodes_volt);
 end
 % lines OH_UG
-                    % loads FeederName_SectionFromTo
-contains_UG = sorting_line_OH_UG(model_dir_name,Feedername);
+[contains_UG,OH_line,UG_line,Type_OH,Type_UG]=sorting_line_OH_UG(model_dir_name,Feedername,SecFromTo);
 % OH lines
                     % load(strcat(FeederName,'_Feeder_Lines_OH.mat'));
-                    % load(strcat(FeederName,'_SectionFromTo.mat'));
-making_OH_Lines(model_dir_name,Feedername,glm_dir_name)
+[conf_OH_name,conf_OH_phases]=making_OH_Lines(model_dir_name,Feedername,glm_dir_name,SecFromTo,OH_line,Type_OH);
 % OH line configuration
-                    % load(strcat(FeederName,'_Feeder_OH_lines.mat'));
-making_OH_Line_Configuration(model_dir_name,Feedername,glm_dir_name)
+making_OH_Line_Configuration(model_dir_name,Feedername,glm_dir_name,conf_OH_name,conf_OH_phases)
 if contains_UG 
     % UG lines
-                    % load(strcat(FeederName,'_Feeder_Lines_UG.mat'));
-                    % load(strcat(FeederName,'_SectionFromTo.mat'));
-    making_UG_Lines(model_dir_name,Feedername,glm_dir_name)
+    [conf_UG_name,conf_UG_phases]=making_UG_Lines(model_dir_name,Feedername,glm_dir_name,SecFromTo,UG_line,Type_UG);
     % UG Line configuration
-                    % load(strcat(FeederName,'_Feeder_UG_lines.mat'));
-    making_UG_Line_Configuration(model_dir_name,Feedername,glm_dir_name)
+    making_UG_Line_Configuration(model_dir_name,Feedername,glm_dir_name,conf_UG_name,conf_UG_phases)
 end
 %making the main header glm file
 making_header(Feedername,glm_dir_name,contains_UG);

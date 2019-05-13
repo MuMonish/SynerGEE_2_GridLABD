@@ -1,10 +1,10 @@
 
-function Make_Load=making_Load(dir_name,FeederName,NonimalVolt,glm_dir_name)
+function Make_Load=making_Load(dir_name,FeederName,NonimalVolt,glm_dir_name,low_voltage_nodes,low_voltage_nodes_volt)
 
 [LoadMatrix,LoadText]=xlsread(strcat(dir_name,'\',FeederName,'_Load.xlsx'));
 [SectionMatrix,SectionText]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
-workspace = strcat(FeederName,'_Node_voltages.mat');
-load(workspace);
+%workspace = strcat(FeederName,'_Node_voltages.mat');
+%load(workspace);
 GlmFileName=strcat(glm_dir_name,'\','Loads_',FeederName,'.glm')
 fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Loads_',FeederName,':%s\n\n\n'),'');
@@ -148,8 +148,8 @@ for i = 1:LoadsN
 end
 fprintf(fid,strcat('//**End Loads_',FeederName,'** %s \n\n\n'));
 
-save Load;
+% save Load;
 
-save ('Load_ratio.mat','LDSect_Node','LoadMatrix','LD_ZIP')
+% save ('Load_ratio.mat','LDSect_Node','LoadMatrix','LD_ZIP')
 
 end

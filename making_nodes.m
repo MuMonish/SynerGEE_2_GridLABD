@@ -1,7 +1,7 @@
 
-function Make_Nodes=making_nodes(dir_name,FeederName,NonimalVolt,glm_dir_name)
+function [low_voltage_nodes, low_voltage_nodes_volt]=making_nodes(dir_name,FeederName,NonimalVolt,glm_dir_name,SecFromTo)
 
-load(strcat(FeederName,'_SectionFromTo.mat'));
+%load(strcat(FeederName,'_SectionFromTo.mat'));
 %load('SectionFromTo.mat');
 [Node_feeder,Node_feeder_text]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
 
@@ -321,10 +321,10 @@ for i = 1:length(nodes_new)
 end
 
 
-save('Node_Phases','Node_phase')
-save nodes
-workspace = strcat(FeederName,'_Node_voltages');
-save(workspace,'low_voltage_nodes','low_voltage_nodes_volt')
+% save('Node_Phases','Node_phase')
+% save nodes
+%workspace = strcat(FeederName,'_Node_voltages');
+%save(workspace,'low_voltage_nodes','low_voltage_nodes_volt')
 end
 
 

@@ -1,7 +1,7 @@
 %%Combine Switch, Regulator and Fuse
 %*******Assume all switches and fuses are in "closed and good status"******
 
-function Make_Breaker_Switch_Regulator_Fuse=making_Breaker_Switch_Regulator_Fuse(dir_name,FeederName,NonimalVolt,glm_dir_name,AllClosed)
+function SecFromTo=making_Breaker_Switch_Regulator_Fuse(dir_name,FeederName,NonimalVolt,glm_dir_name,AllClosed)
 % Assume all closed?
 % Gridlab-D will produce errors if the feeder has sections islanded by open switches.
 %% Switch   Starts
@@ -708,6 +708,6 @@ SecFromto_ordered=[
 SecFromTo=strrep(SecFromto_ordered(:,1:5),' ','');
 SecFromTo(:,6)=SecFromto_ordered(:,6);
 
-save(strcat(FeederName,'_SectionFromTo'),'SecFromTo')
+%save(strcat(FeederName,'_SectionFromTo'),'SecFromTo')
 
 end

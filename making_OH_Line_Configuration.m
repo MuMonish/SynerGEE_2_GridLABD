@@ -1,8 +1,8 @@
 %% Configuration with impedance model
 
-function Make_OH_Line_Configuration=making_OH_Line_Configuration(dir_name,FeederName,glm_dir_name)
+function making_OH_Line_Configuration(dir_name,FeederName,glm_dir_name,conf_OH_name,conf_OH_phases)
 
-load(strcat(FeederName,'_Feeder_OH_lines.mat'));
+%load(strcat(FeederName,'_Feeder_OH_lines.mat'));
 [Conductor_Data,Conductor_type]=xlsread(strcat(dir_name,'\','conductor_warehouse.xlsx'));
 
 Conductor_type(2:end,1)=num2cell(Conductor_Data(:,1));
@@ -12,7 +12,7 @@ GlmFileName=strcat(glm_dir_name,'\','OH_Line_Configuration_',FeederName,'.glm')
 fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Overhead  Line configuration for ',FeederName,':%s\n\n\n'),'');
 
-[conf_OH_name_unique, row_index, col_index]= unique(conf_OH_name);
+[~, row_index, ~]= unique(conf_OH_name);
 
 
 
