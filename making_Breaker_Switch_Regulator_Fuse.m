@@ -504,7 +504,7 @@ if size(SwitchMatrix,1) > 0
     
     fprintf(fid,strcat('//**End Switches_',FeederName,'** %s \n\n\n'));
   
-    save Switches_Closed;
+    % save Switches_Closed;
 end
 %% Print out Regulator
 if size(RegulatorMatrix,1) > 0
@@ -578,7 +578,7 @@ if size(RegulatorMatrix,1) > 0
     
     fprintf(fid,strcat('//**End Regulator_',FeederName,'** %s \n\n\n'));
     
-    save Regulator;
+    % save Regulator;
 end
 
 %% Print out Transformers
@@ -647,7 +647,7 @@ if size(XfmrMatrix,1) > 0
     
     fprintf(fid,strcat('//**End Transformers_',FeederName,'** %s \n\n\n'));
     
-    save Transformers;
+    % save Transformers;
 end
 %% Print OUT Fuse
 if size(FuseMatrix,1) > 0
@@ -693,7 +693,7 @@ if size(FuseMatrix,1) > 0
     
     fprintf(fid,strcat('//**End Fuses_',FeederName,'** %s \n\n\n'));
     
-    save Fuses_Good;
+    % save Fuses_Good;
 end
 
 %% Order =  Transfomer -> FuseN -> RegulatorN -> SwitchN -> BreakerN

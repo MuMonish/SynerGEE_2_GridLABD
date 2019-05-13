@@ -184,31 +184,47 @@ disp('Writing .glm files to \n')
 disp(glm_dir_name)
 % capacitors
 if contains_caps
-    making_Cap(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
+    % xlsxread capacitor and section
+                    % loads nothing
+    % save Capacitor
+    making_Cap(model_dir_name,Feedername,NonimalVolt,glm_dir_name); 
 end
 % breakers regulators fuses
 if contains_breakers || contains_regulators || contains_fuses || contains_switches || contains_Xfmrs
+    % xlsreads many files
+                    % loads nothing
+    % save SecFromTo as FeederName_SectionFromTo; saves file for each
+    % component type
     making_Breaker_Switch_Regulator_Fuse(model_dir_name,Feedername,NonimalVolt,glm_dir_name, AllClosed);
 end
 % nodes
+                    % loads FeederName_SectionFromTo
 making_nodes(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
-% loads
 if contains_Large_customers
+                    % loads FeederName_Node_voltages
     making_Large_customers(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
 end
 if contains_loads
+                    % loads FeederName_Node_voltages
     making_Load(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
 end
 % lines OH_UG
+                    % loads FeederName_SectionFromTo
 contains_UG = sorting_line_OH_UG(model_dir_name,Feedername);
 % OH lines
+                    % load(strcat(FeederName,'_Feeder_Lines_OH.mat'));
+                    % load(strcat(FeederName,'_SectionFromTo.mat'));
 making_OH_Lines(model_dir_name,Feedername,glm_dir_name)
 % OH line configuration
+                    % load(strcat(FeederName,'_Feeder_OH_lines.mat'));
 making_OH_Line_Configuration(model_dir_name,Feedername,glm_dir_name)
 if contains_UG 
     % UG lines
+                    % load(strcat(FeederName,'_Feeder_Lines_UG.mat'));
+                    % load(strcat(FeederName,'_SectionFromTo.mat'));
     making_UG_Lines(model_dir_name,Feedername,glm_dir_name)
     % UG Line configuration
+                    % load(strcat(FeederName,'_Feeder_UG_lines.mat'));
     making_UG_Line_Configuration(model_dir_name,Feedername,glm_dir_name)
 end
 %making the main header glm file
