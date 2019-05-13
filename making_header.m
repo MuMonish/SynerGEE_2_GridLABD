@@ -35,7 +35,9 @@ glm_files=dir([glm_dir_name '/*.glm']);
 
 for i=1:length(glm_files)
     if (strcmp(glm_files(i,:).name,strcat('Feeder_',FeederName,'.glm')))==0
-        fprintf(fid,'#include "%s";\n',glm_files(i,:).name);
+        if contains(glm_files(i,:).name, "_O-C")==0 % don't inlclude files that might contain open switches or breakers
+            fprintf(fid,'#include "%s";\n',glm_files(i,:).name);
+        end
     end
 end
 fprintf(fid,'\n\n');

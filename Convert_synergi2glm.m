@@ -1,27 +1,28 @@
-function Convert_synergi2glm(Feedername, AllClosed)
+function Convert_synergi2glm(databaseName,Feedername, AllClosed)
 
 %Feedername = 'SPU125'
 %AllClosed = true
 NonimalVolt=7970;
-
+%databaseName = '20120206_Pullman'
 %% setting up connection with SynerGEE DataBase
-conn = database('20120206_Pullman','','');
+conn = database(databaseName,'','');
 selectquery = 'SELECT * FROM InstSection';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 InstSection = curs.Data;
 %InstSection = select(conn,selectquery);
 InstSection(1:20,:);
 row = strcmp(InstSection(:,2),Feedername);
 feeder_Section = InstSection(row,:);
+% remove spaces from phases ex: "A  N" -> "AN"
 feeder_Section(:,5) = strrep(feeder_Section(:,5),' ','');
-feeder_nodes = unique(cat(1,feeder_Section(:,3),feeder_Section(:,4)));
+% feeder_nodes = unique(cat(1,feeder_Section(:,3),feeder_Section(:,4))); %
 feeder_sectionId = feeder_Section(:,1);
 
 %% Query to get data from Database
 selectquery = 'SELECT * FROM Loads';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Loads = curs.Data;
 %Loads = select(conn,selectquery);
 row = find(ismember(Loads(:,1),feeder_sectionId));
@@ -33,8 +34,8 @@ else
 end
 %% Large Customers
 selectquery = 'SELECT * FROM InstLargeCust';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Large_customers = curs.Data;
 %Loads = select(conn,selectquery);
 row = find(ismember(Large_customers(:,1),feeder_sectionId));
@@ -46,8 +47,8 @@ else
 end
 %% Query for Large Capacitors
 selectquery = 'SELECT * FROM Instcapacitors';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Capacitors = curs.Data;
 %Capacitors = select(conn,selectquery);
 
@@ -60,8 +61,8 @@ else
 end
 %% Query for Switches
 selectquery = 'SELECT * FROM InstSwitches';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Switches = curs.Data;
 %Switches = select(conn,selectquery);
 row = find(ismember(Switches(:,1),feeder_sectionId));
@@ -73,50 +74,53 @@ else
 end
 %% Query for Breakers
 selectquery = 'SELECT * FROM InstBreakers';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Breakers = curs.Data;
 %Breakers = select(conn,selectquery);
 row = find(ismember(Breakers(:,1),feeder_sectionId));
 feeder_Breakers = Breakers(row,:);
-feeder_Breakers(:,44) = strrep(feeder_Breakers(:,44),' ','');
 if length(row) < 1
     contains_breakers = false;
 else
     contains_breakers = true;
+    % remove spaces from phases ex: "A  N" -> "AN"
+    feeder_Breakers(:,44) = strrep(feeder_Breakers(:,44),' ','');
 end
 %% Query for Regulators
 selectquery = 'SELECT * FROM InstRegulators';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Regulators = curs.Data;
 %Regulators = select(conn,selectquery);
 row = find(ismember(Regulators(:,1),feeder_sectionId));
 feeder_Regulators = Regulators(row,:);
-feeder_Regulators(:,3) = strrep(feeder_Regulators(:,3),' ','');
 if length(row) < 1
     contains_regulators = false;
 else
     contains_regulators = true;
+    % remove spaces from phases ex: "A  N" -> "AN"
+    feeder_Regulators(:,3) = strrep(feeder_Regulators(:,3),' ','');
 end
 %% Query for Fuses
 selectquery = 'SELECT * FROM InstFuses';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Fuses = curs.Data;
 %Fuses = select(conn,selectquery);
 row = find(ismember(Fuses(:,1),feeder_sectionId));
 feeder_Fuses = Fuses(row,:);
-feeder_Fuses(:,11) = strrep(feeder_Fuses(:,11),' ','');
 if length(row) < 1
     contains_fuses = false;
 else
     contains_fuses = true;
+    % remove spaces from phases ex: "A  N" -> "AN"
+    feeder_Fuses(:,11) = strrep(feeder_Fuses(:,11),' ',''); 
 end
 %% Query for Transformers
 selectquery = 'SELECT * FROM InstPrimaryTransformers';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Xfmrs = curs.Data;
 %Fuses = select(conn,selectquery);
 row = find(ismember(Xfmrs(:,1),feeder_sectionId));
@@ -130,24 +134,24 @@ close(conn)
 %% Query for Conductor Warehouse
 conn = database('Warehouse','','');
 selectquery = 'SELECT * FROM DevConductors';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 conductors_config_new = curs.Data;
 conductors_config = [num2cell(1:size(conductors_config_new,1))' conductors_config_new];
 %% Query for Regulator Config
 selectquery = 'SELECT * FROM DevRegulators';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Regulators_config = curs.Data;
 %% Query for Transoformer Config
 selectquery = 'SELECT * FROM DevTransformers';
-curs = exec(conn,selectquery)
-curs = fetch(curs)
+curs = exec(conn,selectquery);
+curs = fetch(curs);
 Transformers_config = curs.Data;
 
 %% creating sub directory
 
-currentFolder = pwd;
+% currentFolder = pwd;
 folderName = strcat(Feedername,'_data');
 model_dir_name = strcat(pwd,'\',folderName);
 mkdir(model_dir_name);
@@ -183,7 +187,7 @@ if contains_caps
     making_Cap(model_dir_name,Feedername,NonimalVolt,glm_dir_name);
 end
 % breakers regulators fuses
-if contains_breakers || contains_regulators || contains_fuses
+if contains_breakers || contains_regulators || contains_fuses || contains_switches || contains_Xfmrs
     making_Breaker_Switch_Regulator_Fuse(model_dir_name,Feedername,NonimalVolt,glm_dir_name, AllClosed);
 end
 % nodes
@@ -212,3 +216,4 @@ making_header(Feedername,glm_dir_name,contains_UG);
 
 clearvars
 end
+

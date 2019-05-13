@@ -53,8 +53,8 @@ end
 n=1;
 for m=5:5+2
     Sphase=sqrt(LoadMatrix(:,m).^2+LoadMatrix(:,m+3).^2);%Setting
-    
-    Sabc(:,n)=Sphase; %ABC phase for each column
+    direction = sign(cos(angle(LoadMatrix(:,m)-1j*LoadMatrix(:,m+3))));
+    Sabc(:,n)=Sphase.*direction; %ABC phase for each column
     
     n=n+1;
 end
