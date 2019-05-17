@@ -40,7 +40,7 @@ for m=1:length(row_index)
         fprintf(fid,'\t z31 %f+%fj;\n', [real(Zm) imag(Zm)].');
         fprintf(fid,'\t z32 %f+%fj;\n', [real(Zm) imag(Zm)].');
         fprintf(fid,'\t z33 %f+%fj;\n', [real(Zs) imag(Zs)].');
-    else % why?
+    else % If the imaginary par is negative don't use a +
         fprintf(fid,'\t z11 %f+%fj;\n', [real(Zs) imag(Zs)].');
         fprintf(fid,'\t z12 %f%fj;\n', [real(Zm) imag(Zm)].');
         fprintf(fid,'\t z13 %f%fj;\n', [real(Zm) imag(Zm)].');

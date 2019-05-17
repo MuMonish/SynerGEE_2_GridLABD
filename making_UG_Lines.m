@@ -62,7 +62,7 @@ for i = 1:size(UG_line,1)
     conf_UG_type_phases(k,1)=cellstr(UG_line(i,5));
     conf_UG_neutral(k,1)=Type_UG_neutral_int(i,1);
     conf_UG_phases(k,1)=Type_UG_phase_int(i,1);
-    conf_UG_name(k,1)=strcat(conf_UG_type_phases(k,1),'_',int2str(conf_UG_neutral(k,1)),'_',int2str(conf_UG_phases(k,1)));
+    conf_UG_name(k,1)=strcat(conf_UG_type_phases(k,1),'_',int2str(conf_UG_neutral(k,1)),'_',int2str(conf_UG_phases(k,1)),'_',FeederName);
     fprintf(fid,'\t configuration underground_line_config_%s;\n',char(conf_UG_name(k,1)));
     k=k+1;
     fprintf(fid,'\t } \n\n');

@@ -519,9 +519,10 @@ if size(RegulatorMatrix,1) > 0
     for m=1:RegulatorN
         for n=1:RegConfigN
             if strcmp(RegType(m),RegCofigType(n))
+                conf_Reg_name=strcat(num2str(n),'_',FeederName);
                 fprintf(fid,'object regulator_configuration {\n');
-                fprintf(fid,'\t name Reg_Config_%s;\n',num2str(n));
-                RegulatorSect_Node(m,5)=cellstr(num2str(n));
+                fprintf(fid,'\t name Reg_Config_%s;\n',conf_Reg_name);
+                RegulatorSect_Node(m,5)=cellstr(conf_Reg_name);
                 RegulatorSect_Node(m,6)=RegCofigType(n);
                 
                 if strcmp(RegConnect(m),'YG')
@@ -591,7 +592,8 @@ if size(XfmrMatrix,1) > 0
     for m=1:XfmrN
         for n=1:XfmrConfigN
             if strcmp(XfmrType(m),XfmrCofigType(n))
-                XfmrSect_Node(m,5)=cellstr(num2str(n));
+                conf_Xfmr_name=strcat(num2str(n),'_',FeederName);
+                XfmrSect_Node(m,5)=cellstr(conf_Xfmr_name);
                 XfmrSect_Node(m,6)=XfmrCofigType(n);
                 low_voltage(m,1) = XfmrConfigMatrix(n,3)*1000/sqrt(3);
                 if m==1
@@ -601,7 +603,7 @@ if size(XfmrMatrix,1) > 0
                 end
                 if uniqueXfmr
                     fprintf(fid,'object transformer_configuration {\n');
-                    fprintf(fid,'\t name Xfmr_Config_%s;\n',num2str(n));
+                    fprintf(fid,'\t name Xfmr_Config_%s;\n',conf_Xfmr_name);
                     
                     if (strcmp(XfmrConnect_high(m),'YG') == 1) && (strcmp(XfmrConnect_low(m),'YG') == 1)
                         fprintf(fid,'\t connect_type WYE_WYE;\n');

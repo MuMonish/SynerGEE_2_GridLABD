@@ -62,7 +62,7 @@ for i = 1:size(OH_line,1)
     conf_OH_type_phases(k,1)=cellstr(OH_line(i,5));
     conf_OH_neutral(k,1)=Type_OH_neutral_int(i,1);
     conf_OH_phases(k,1)=Type_OH_phase_int(i,1);
-    conf_OH_name(k,1)=strcat(conf_OH_type_phases(k,1),'_',int2str(conf_OH_neutral(k,1)),'_',int2str(conf_OH_phases(k,1)));
+    conf_OH_name(k,1)=strcat(conf_OH_type_phases(k,1),'_',int2str(conf_OH_neutral(k,1)),'_',int2str(conf_OH_phases(k,1)),'_',FeederName);
     fprintf(fid,'\t configuration overhead_line_config_%s;\n',char(conf_OH_name(k,1)));
     k=k+1;
     fprintf(fid,'\t } \n\n');
