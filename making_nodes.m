@@ -99,10 +99,7 @@ from_to_node_phase=[phase_from_node(2:end,1);phase_to_node(2:end,1)];
 for i=1:length(only_nodes)
     k=2;
     for j=1:length(from_to_node)
-        if strcmp(cellstr(only_nodes(i)),cellstr(from_to_node(j))) 
-            % This if statement gets run 860532 times and takes 9.6s total 
-            % when running the convert on 7 feeders. That is 50% of the
-            % total computational time!
+        if strcmp(only_nodes(i),from_to_node(j)) 
             node_info(i,1)=only_nodes(i,1);
             node_info(i,k)=from_to_node_phase(j);
             k=k+1;
