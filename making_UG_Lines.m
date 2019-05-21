@@ -1,5 +1,5 @@
 
-function [conf_UG_name,conf_UG_phases]=making_UG_Lines(dir_name,FeederName,glm_dir_name,SecFromTo,UG_line,Type_UG)
+function [conf_UG_name,conf_UG_phases]=making_UG_Lines(FeederName,glm_dir_name,SecFromTo,UG_line,Type_UG)
 %load(strcat(FeederName,'_Feeder_Lines_UG.mat'));
 %load(strcat(FeederName,'_SectionFromTo.mat'));
 
@@ -27,7 +27,7 @@ end
 [~,secID]=unique(secfromregfuseswitch);
 sec_f_reg_sw_info=ordered_SecFromTo(secID,:);
 
-GlmFileName=strcat(glm_dir_name,'\','UndergroundLines_',FeederName,'.glm')
+GlmFileName=strcat(glm_dir_name,'\','UndergroundLines_',FeederName,'.glm');
 fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Underground Lines for ',FeederName,':%s\n\n\n'),'');
 

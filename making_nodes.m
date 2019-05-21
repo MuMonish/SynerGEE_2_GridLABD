@@ -1,10 +1,12 @@
 
-function [low_voltage_nodes, low_voltage_nodes_volt]=making_nodes(dir_name,FeederName,NonimalVolt,glm_dir_name,SecFromTo)
+function [low_voltage_nodes, low_voltage_nodes_volt]=making_nodes(feeder_Section,FeederName,NonimalVolt,glm_dir_name,SecFromTo)
 
 %load(strcat(FeederName,'_SectionFromTo.mat'));
 %load('SectionFromTo.mat');
-[Node_feeder,Node_feeder_text]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
-
+% [Node_feeder,Node_feeder_text]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
+[r,c] = size(feeder_Section);
+Node_feeder_text = cell(r+1,c); % first row not needed. Only added to make new code compatible with old
+Node_feeder_text(2:end,:) = feeder_Section;
 %% Plotting Feeder Topology and getting downstream low voltage nodes on Transformer secondary
 SecFromTo_modified = SecFromTo;
 Node_from_to_modified = Node_feeder_text(2:end,3:4);
@@ -97,7 +99,10 @@ from_to_node_phase=[phase_from_node(2:end,1);phase_to_node(2:end,1)];
 for i=1:length(only_nodes)
     k=2;
     for j=1:length(from_to_node)
-        if strcmp(cellstr(only_nodes(i)),cellstr(from_to_node(j)))
+        if strcmp(cellstr(only_nodes(i)),cellstr(from_to_node(j))) 
+            % This if statement gets run 860532 times and takes 9.6s total 
+            % when running the convert on 7 feeders. That is 50% of the
+            % total computational time!
             node_info(i,1)=only_nodes(i,1);
             node_info(i,k)=from_to_node_phase(j);
             k=k+1;
@@ -124,9 +129,9 @@ end
 nodes=node_info(:,1);
 phases_nodes=Phase;
   
-Node_phase=[nodes phases_nodes];
+% Node_phase=[nodes phases_nodes];
 
-GlmFileName=strcat(glm_dir_name,'\','Node_',FeederName,'.glm')
+GlmFileName=strcat(glm_dir_name,'\','Node_',FeederName,'.glm');
 fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Nodes for',FeederName,':%s\n\n\n'),'');
 
@@ -135,7 +140,7 @@ for i = 1:length(nodes)
     fprintf (fid,'\t name %s;\n',char(nodes(i)));
     fprintf (fid,'\t phases %s;\n',strrep(char(phases_nodes(i)),' ',''));
     
-    if (length(low_voltage_nodes)>0)
+    if (~isempty(low_voltage_nodes))
         element_index= find(strcmp(low_voltage_nodes(:,1),nodes(i)));
     else
         element_index=[];

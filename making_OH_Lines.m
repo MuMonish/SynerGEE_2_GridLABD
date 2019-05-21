@@ -1,5 +1,5 @@
 
-function [conf_OH_name,conf_OH_phases]=making_OH_Lines(dir_name,FeederName,glm_dir_name,SecFromTo,OH_line,Type_OH)
+function [conf_OH_name,conf_OH_phases]=making_OH_Lines(FeederName,glm_dir_name,SecFromTo,OH_line,Type_OH)
 %load(strcat(FeederName,'_Feeder_Lines_OH.mat'));
 %load(strcat(FeederName,'_SectionFromTo.mat'));
 
@@ -27,13 +27,13 @@ end
 [~,secID]=unique(secfromregfuseswitch);
 sec_f_reg_sw_info=ordered_SecFromTo(secID,:);
 
-GlmFileName=strcat(glm_dir_name,'\','OverheadLines_',FeederName,'.glm')
+GlmFileName=strcat(glm_dir_name,'\','OverheadLines_',FeederName,'.glm');
 fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Overhead Lines for ',FeederName,':%s\n\n\n'),'');
 
 
 conf_OH_type_phases=cell(1,1);
-Type_OH_int = cell2mat(Type_OH(:,1));
+%Type_OH_int = cell2mat(Type_OH(:,1));
 Type_OH_neutral_int=cell2mat(Type_OH(:,2));
 Type_OH_phase_int=cell2mat(Type_OH(:,1));
 Length_OH = cell2mat(OH_line(:,16));

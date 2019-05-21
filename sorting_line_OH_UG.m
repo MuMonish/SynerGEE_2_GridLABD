@@ -1,24 +1,24 @@
 
-function  [contains_UG,OH_line,UG_line,Type_OH,Type_UG]=sorting_line_OH_UG(dir_name,FeederName,SecFromTo)
+function  [contains_UG,OH_line,UG_line,Type_OH,Type_UG]=sorting_line_OH_UG(conductors_config,feeder_Section)
 
 
 % load('SectionFromTo.mat');
 %load(strcat(FeederName,'_SectionFromTo.mat'));
-[Node_feeder,Node_feeder_text]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
-[Conductor_Data,Conductor_type]=xlsread(strcat(dir_name,'\','conductor_warehouse.xlsx'));
+% [Node_feeder,Node_feeder_text]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
+% [Conductor_Data,Conductor_type]=xlsread(strcat(dir_name,'\','conductor_warehouse.xlsx'));
 
-Node_feeder_text(1,:)=[];
-Node_feeder_text(:,9:26)=num2cell(Node_feeder(:,1:18));
-
+% Node_feeder_text(1,:)=[];
+% Node_feeder_text(:,9:26)=num2cell(Node_feeder(:,1:18));
+Node_feeder_text = feeder_Section;
 DIM=size(Node_feeder_text);
-a=1;
+%a=1;
 j=1;
 for i=1:DIM(1,1)
          l= strfind(Node_feeder_text(i,7),'CN');
       if iscellstr(Node_feeder_text(i,6))~=0
          k = strfind(Node_feeder_text(i,6),'CircuitSegmentBank');
-          if cell2mat(k)==1;
-            if isempty(cell2mat(l))==1;
+          if cell2mat(k)==1
+            if isempty(cell2mat(l))==1
                OH_index(j,1)=i;
                j=j+1;
             end
@@ -55,12 +55,14 @@ end
  Type_OH_neutral = cell(0,0);
  Type_UG_phase = cell(0,0);
  Type_UG_neutral = cell(0,0);
- Conductor_type(2:end,1)=num2cell(Conductor_Data(:,1));
- Conductor_type(2:end,4:13)=num2cell(Conductor_Data(:,4:13));
+%  Conductor_type(2:end,1)=num2cell(Conductor_Data(:,1));
+%  Conductor_type(2:end,4:13)=num2cell(Conductor_Data(:,4:13));
  
  
- cond_type=Conductor_type(:,1);
- cond_name=Conductor_type(:,2);
+%  cond_type=Conductor_type(:,1);
+%  cond_name=Conductor_type(:,2);
+cond_type = conductors_config(:,1);
+cond_name = conductors_config(:,2);
  
 for i=1:length(OH_index)
      for j=1:length(cond_name)
@@ -96,7 +98,7 @@ end
      end
  end
 
- strcat(FeederName,'_Feeder_Lines_OH')
+%  strcat(FeederName,'_Feeder_Lines_OH')
  %save('Feeder_Lines_OH','OH_line','Type_OH_neutral','Type_OH_phase','OH_index')
  %save(strcat(FeederName,'_Feeder_Lines_OH'),'OH_line','Type_OH_neutral','Type_OH_phase','OH_index')
  if UG_index > 0

@@ -1,7 +1,7 @@
 
 function Make_Header_File=making_header(FeederName,glm_dir_name,contains_UG)
 
-GlmFileName=strcat(glm_dir_name,'\','Feeder_',FeederName,'.glm')
+GlmFileName=strcat(glm_dir_name,'\','Feeder_',FeederName,'.glm');
 fid = fopen(GlmFileName,'wt');%Capacitors_3HT12F1    Capacitors_ROS12F2
 fprintf(fid,strcat('//**This is a GridLAB-D Model (glm) file for feeder : ',FeederName,'%s\n\n\n'),'');
    
@@ -67,5 +67,5 @@ fprintf(fid,'\t filename output_current.csv;\n');
 fprintf(fid,'\t mode polar;\n');
 fprintf(fid,'}\n\n\n');
 
-fclose('all')
+fclose('all');
 end

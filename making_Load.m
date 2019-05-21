@@ -1,26 +1,33 @@
 
-function Make_Load=making_Load(dir_name,FeederName,NonimalVolt,glm_dir_name,low_voltage_nodes,low_voltage_nodes_volt)
+function making_Load(feeder_Section,feeder_Loads,FeederName,NonimalVolt,glm_dir_name,low_voltage_nodes,low_voltage_nodes_volt)
 
-[LoadMatrix,LoadText]=xlsread(strcat(dir_name,'\',FeederName,'_Load.xlsx'));
-[SectionMatrix,SectionText]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
+%[LoadMatrix,LoadText]=xlsread(strcat(dir_name,'\',FeederName,'_Load.xlsx'));
+%[SectionMatrix,SectionText]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
+LoadMatrix = cell2mat(feeder_Loads(:,2:17));
+SectionMatrix = cell2mat(feeder_Section(:,9:21));
 %workspace = strcat(FeederName,'_Node_voltages.mat');
 %load(workspace);
-GlmFileName=strcat(glm_dir_name,'\','Loads_',FeederName,'.glm')
+GlmFileName=strcat(glm_dir_name,'\','Loads_',FeederName,'.glm');
 fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Loads_',FeederName,':%s\n\n\n'),'');
-[LoadsN,Columns]=size(LoadMatrix);
-[SectionsN,Columns2]=size(SectionMatrix);
-LoadPhaseIndex=5:10;%Setting
+[LoadsN,~]=size(LoadMatrix);
+[SectionsN,~]=size(SectionMatrix);
+%LoadPhaseIndex=5:10;%Setting
 Sabc=zeros(LoadsN,3);
 
 %LoadPhase in  Section Table %Setting
-LoadPhaseText=SectionText(2:end,5);
-SectionID=SectionText(2:end,1);
-FromNodeId=SectionText(2:end,3);
-ToNodeId=SectionText(2:end,4);
+LoadPhaseText=feeder_Section(:,5);
+SectionID=feeder_Section(:,1);
+FromNodeId=feeder_Section(:,3);
+ToNodeId=feeder_Section(:,4);
+% LoadPhaseText=SectionText(2:end,5);
+% SectionID=SectionText(2:end,1);
+% FromNodeId=SectionText(2:end,3);
+% ToNodeId=SectionText(2:end,4);
 
 %SectionID in Load table %Setting
-LDSectionID=LoadText(2:end,1);
+LDSectionID=feeder_Loads(1:end,1);
+%LDSectionID=LoadText(2:end,1);
 LDSect_Node=cell(LoadsN,4);
 LDSect_Node(:,1)=LDSectionID;
   
@@ -100,48 +107,48 @@ end
 for i = 1:LoadsN
     
     fprintf (fid,'object load {\n');
-    fprintf (fid,'\t parent %s;\n',char(LDSect_Node(i,3)));%From Node(2) Connected Load ToNode(3)
-    fprintf (fid,'\t name LOAD_%s;\n',char(LDSect_Node(i,1)));%Section
-    fprintf (fid,'\t phases %s;\n',strrep(char(LDSect_Node(i,4)),' ',''));
+    fprintf (fid,'\tparent %s;\n',char(LDSect_Node(i,3)));%From Node(2) Connected Load ToNode(3)
+    fprintf (fid,'\tname LOAD_%s;\n',char(LDSect_Node(i,1)));%Section
+    fprintf (fid,'\tphases %s;\n',strrep(char(LDSect_Node(i,4)),' ',''));
     
-    fprintf (fid,'\t base_power_A %f;\n',SabcVA(i,1));
-    fprintf (fid,'\t base_power_B %f;\n',SabcVA(i,2));
-    fprintf (fid,'\t base_power_C %f;\n',SabcVA(i,3));
+    fprintf (fid,'\tbase_power_A %f;\n',SabcVA(i,1));
+    fprintf (fid,'\tbase_power_B %f;\n',SabcVA(i,2));
+    fprintf (fid,'\tbase_power_C %f;\n',SabcVA(i,3));
     
-    fprintf (fid,'\t power_pf_A %f;\n',PF(i,1));
-    fprintf (fid,'\t current_pf_A %f;\n',PF(i,1));
-    fprintf (fid,'\t impedance_pf_A %f;\n',PF(i,1));
+    fprintf (fid,'\tpower_pf_A %f;\n',PF(i,1));
+    fprintf (fid,'\tcurrent_pf_A %f;\n',PF(i,1));
+    fprintf (fid,'\timpedance_pf_A %f;\n',PF(i,1));
     
-    fprintf (fid,'\t power_pf_B %f;\n',PF(i,2));
-    fprintf (fid,'\t current_pf_B %f;\n',PF(i,2));
-    fprintf (fid,'\t impedance_pf_B %f;\n',PF(i,2));
+    fprintf (fid,'\tpower_pf_B %f;\n',PF(i,2));
+    fprintf (fid,'\tcurrent_pf_B %f;\n',PF(i,2));
+    fprintf (fid,'\timpedance_pf_B %f;\n',PF(i,2));
     
-    fprintf (fid,'\t power_pf_C %f;\n',PF(i,3));
-    fprintf (fid,'\t current_pf_C %f;\n',PF(i,3));
-    fprintf (fid,'\t impedance_pf_C %f;\n',PF(i,3));
+    fprintf (fid,'\tpower_pf_C %f;\n',PF(i,3));
+    fprintf (fid,'\tcurrent_pf_C %f;\n',PF(i,3));
+    fprintf (fid,'\timpedance_pf_C %f;\n',PF(i,3));
     
-    fprintf (fid,'\t power_fraction_A %.2f;\n',LD_ZIP(i,3));
-    fprintf (fid,'\t current_fraction_A %.2f;\n',LD_ZIP(i,2));
-    fprintf (fid,'\t impedance_fraction_A %.2f;\n',LD_ZIP(i,1));
+    fprintf (fid,'\tpower_fraction_A %.2f;\n',LD_ZIP(i,3));
+    fprintf (fid,'\tcurrent_fraction_A %.2f;\n',LD_ZIP(i,2));
+    fprintf (fid,'\timpedance_fraction_A %.2f;\n',LD_ZIP(i,1));
     
-    fprintf (fid,'\t power_fraction_B %.2f;\n',LD_ZIP(i,3));
-    fprintf (fid,'\t current_fraction_B %.2f;\n',LD_ZIP(i,2));
-    fprintf (fid,'\t impedance_fraction_B %.2f;\n',LD_ZIP(i,1));
+    fprintf (fid,'\tpower_fraction_B %.2f;\n',LD_ZIP(i,3));
+    fprintf (fid,'\tcurrent_fraction_B %.2f;\n',LD_ZIP(i,2));
+    fprintf (fid,'\timpedance_fraction_B %.2f;\n',LD_ZIP(i,1));
     
-    fprintf (fid,'\t power_fraction_C %.2f;\n',LD_ZIP(i,3));
-    fprintf (fid,'\t current_fraction_C %.2f;\n',LD_ZIP(i,2));
-    fprintf (fid,'\t impedance_fraction_C %.2f;\n',LD_ZIP(i,1));
+    fprintf (fid,'\tpower_fraction_C %.2f;\n',LD_ZIP(i,3));
+    fprintf (fid,'\tcurrent_fraction_C %.2f;\n',LD_ZIP(i,2));
+    fprintf (fid,'\timpedance_fraction_C %.2f;\n',LD_ZIP(i,1));
     
-    if (length(low_voltage_nodes)>0)
+    if (~isempty(low_voltage_nodes))
         element_index= find(strcmp(low_voltage_nodes(:,1),LDSect_Node(i,3)));
     else
         element_index=[];
     end
     if (length(element_index)==1) 
         voltage  = low_voltage_nodes_volt(element_index,1);
-        fprintf (fid,'\t nominal_voltage %.2f;\n',voltage);% change voltage  
+        fprintf (fid,'\tnominal_voltage %.2f;\n',voltage);% change voltage  
     else
-    fprintf (fid,'\t nominal_voltage %.2f;\n',NonimalVolt);
+    fprintf (fid,'\tnominal_voltage %.2f;\n',NonimalVolt);
     end 
     fprintf(fid,'}\n\n\n');
     

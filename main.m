@@ -1,11 +1,16 @@
 clc
 clearvars
-AllClosed = false
-databaseName = '20120206_Pullman - Edited'
-Convert_synergi2glm(databaseName,'SPU122',AllClosed)
-Convert_synergi2glm(databaseName,'SPU125',AllClosed)
-Convert_synergi2glm(databaseName,'TUR111',AllClosed)
-Convert_synergi2glm(databaseName,'TUR115',AllClosed)
-Convert_synergi2glm(databaseName,'TUR117',AllClosed)
-Convert_synergi2glm(databaseName,'TVW131',AllClosed)
-Convert_synergi2glm(databaseName,'SPU124',AllClosed)
+AllClosed = false;
+databaseName = '20120206_Pullman - Edited';
+conn_warehouse = database('Warehouse','','');
+conn_model = database(databaseName,'','');
+Convert_synergi2glm(conn_model, conn_warehouse, 'SPU122',AllClosed)
+Convert_synergi2glm(conn_model, conn_warehouse, 'SPU125',AllClosed)
+Convert_synergi2glm(conn_model, conn_warehouse, 'TUR111',AllClosed)
+Convert_synergi2glm(conn_model, conn_warehouse, 'TUR115',AllClosed)
+Convert_synergi2glm(conn_model, conn_warehouse, 'TUR117',AllClosed)
+Convert_synergi2glm(conn_model, conn_warehouse, 'TVW131',AllClosed)
+Convert_synergi2glm(conn_model, conn_warehouse, 'SPU124',AllClosed)
+
+close(conn_warehouse)
+close(conn_model)

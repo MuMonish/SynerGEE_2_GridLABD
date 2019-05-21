@@ -1,27 +1,34 @@
 
-function Make_Load=making_Large_customers(dir_name,FeederName,NonimalVolt,glm_dir_name,low_voltage_nodes,low_voltage_nodes_volt)
+function making_Large_customers(feeder_Section,feeder_Large_customers,FeederName,NonimalVolt,glm_dir_name,low_voltage_nodes,low_voltage_nodes_volt)
 
-[LargeCustMatrix,LargeCustText]=xlsread(strcat(dir_name,'\',FeederName,'_Large_customers.xlsx'));
-[SectionMatrix,SectionText]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
+%[LargeCustMatrix,LargeCustText]=xlsread(strcat(dir_name,'\',FeederName,'_Large_customers.xlsx'));
+%[SectionMatrix,SectionText]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
+SectionMatrix = cell2mat(feeder_Section(:,9:21));
 %workspace = strcat(FeederName,'_Node_voltages.mat');
 %load(workspace);
 
-GlmFileName=strcat(glm_dir_name,'\','Large_customers_',FeederName,'.glm')
+GlmFileName=strcat(glm_dir_name,'\','Large_customers_',FeederName,'.glm');
 fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Large_customers_',FeederName,':%s\n\n\n'),'');
-[LoadsN,Columns]=size(LargeCustMatrix);
-[SectionsN,Columns2]=size(SectionMatrix);
-LoadPhaseIndex=5:10;%Setting
+[LoadsN,~]=size(feeder_Large_customers);
+[SectionsN,~]=size(feeder_Section);
+%LoadPhaseIndex=5:10;%Setting
 Sabc=zeros(LoadsN,3);
 
 %LoadPhase in  Section Table %Setting
-LoadPhaseText=SectionText(2:end,5);
-SectionID=SectionText(2:end,1);
-FromNodeId=SectionText(2:end,3);
-ToNodeId=SectionText(2:end,4);
+LoadPhaseText=feeder_Section(:,5);
+SectionID=feeder_Section(:,1);
+FromNodeId=feeder_Section(:,3);
+ToNodeId=feeder_Section(:,4);
+% LoadPhaseText=SectionText(2:end,5);
+% SectionID=SectionText(2:end,1);
+% FromNodeId=SectionText(2:end,3);
+% ToNodeId=SectionText(2:end,4);
 
 %SectionID in Load table %Setting
-LDSectionID=LargeCustText(2:end,1);
+LDSectionID=feeder_Large_customers(:,1);
+UniqueDeviceID = feeder_Large_customers(:,2);
+%LDSectionID=LargeCustText(2:end,1);
 LDSect_Node=cell(LoadsN,4);
 LDSect_Node(:,1)=LDSectionID;
   
@@ -52,8 +59,9 @@ end
 
 %Base Power(kVA)
 n=1;
-for m=7:7+2
-    Sphase=sqrt(LargeCustMatrix(:,m).^2+LargeCustMatrix(:,m+3).^2);%Setting
+for m=9:9+2 %7:7+2
+    Sphase=sqrt(cell2mat(feeder_Large_customers(:,m)).^2+cell2mat(feeder_Large_customers(:,m+3)).^2);%Setting
+    %Sphase=sqrt(LargeCustMatrix(:,m).^2+LargeCustMatrix(:,m+3).^2);%Setting
     
     Sabc(:,n)=Sphase; %ABC phase for each column
     
@@ -63,7 +71,8 @@ SabcVA= Sabc*1000;
 
 %Power Factor 
 PF=zeros(LoadsN,3);
-PLoadmatrix=LargeCustMatrix(:,7:10);%Setting
+%PLoadmatrix=LargeCustMatrix(:,7:10);%Setting
+PLoadmatrix=cell2mat(feeder_Large_customers(:,9:11));%Setting
 for m=1:3
 for n=1:LoadsN
 
@@ -100,52 +109,34 @@ end
 %Distributed load equivalent
 for i = 1:LoadsN
     
-    fprintf (fid,'object load {\n');
-    fprintf (fid,'\t parent %s;\n',char(LDSect_Node(i,3)));%From Node(2) Connected Load ToNode(3)
-    fprintf (fid,'\t name Large_customer_%s;\n',char(LDSect_Node(i,1)));%Section
-    fprintf (fid,'\t phases %s;\n',strrep(char(LDSect_Node(i,4)),' ',''));
+    fprintf (fid,'object load { // %s\n', char(UniqueDeviceID(i)));
+    fprintf (fid,'\tparent %s;\n',char(LDSect_Node(i,3)));%From Node(2) Connected Load ToNode(3)
+    fprintf (fid,'\tname Large_customer_%s;\n',char(LDSect_Node(i,1)));%Section
+    fprintf (fid,'\tphases %s;\n',strrep(char(LDSect_Node(i,4)),' ',''));
     phase = strrep(char(LDSect_Node(i,4)),' ','');
     for ph = 1:(length(phase)-1)
         
-        fprintf (fid,'\t base_power_%s %f;\n',phase(ph),SabcVA(i,ph));
-        %fprintf (fid,'\t base_power_B %f;\n',SabcVA(i,2));
-        %fprintf (fid,'\t base_power_C %f;\n',SabcVA(i,3));
+        fprintf (fid,'\tbase_power_%s %f;\n',phase(ph),SabcVA(i,ph));
 
-        fprintf (fid,'\t power_pf_%s %f;\n',phase(ph),PF(i,ph));
-        fprintf (fid,'\t current_pf_%s %f;\n',phase(ph),PF(i,ph));
-        fprintf (fid,'\t impedance_pf_%s %f;\n',phase(ph),PF(i,ph));
+        fprintf (fid,'\tpower_pf_%s %f;\n',phase(ph),PF(i,ph));
+        fprintf (fid,'\tcurrent_pf_%s %f;\n',phase(ph),PF(i,ph));
+        fprintf (fid,'\timpedance_pf_%s %f;\n',phase(ph),PF(i,ph));
 
-%         fprintf (fid,'\t power_pf_B %f;\n',PF(i,2));
-%         fprintf (fid,'\t current_pf_B %f;\n',PF(i,2));
-%         fprintf (fid,'\t impedance_pf_B %f;\n',PF(i,2));
-% 
-%         fprintf (fid,'\t power_pf_C %f;\n',PF(i,3));
-%         fprintf (fid,'\t current_pf_C %f;\n',PF(i,3));
-%         fprintf (fid,'\t impedance_pf_C %f;\n',PF(i,3));
-
-        fprintf (fid,'\t power_fraction_%s %.2f;\n',phase(ph),LD_ZIP(i,3));
-        fprintf (fid,'\t current_fraction_%s %.2f;\n',phase(ph),LD_ZIP(i,2));
-        fprintf (fid,'\t impedance_fraction_%s %.2f;\n',phase(ph),LD_ZIP(i,1));
-
-%         fprintf (fid,'\t power_fraction_B %.2f;\n',LD_ZIP(i,3));
-%         fprintf (fid,'\t current_fraction_B %.2f;\n',LD_ZIP(i,2));
-%         fprintf (fid,'\t impedance_fraction_B %.2f;\n',LD_ZIP(i,1));
-% 
-%         fprintf (fid,'\t power_fraction_C %.2f;\n',LD_ZIP(i,3));
-%         fprintf (fid,'\t current_fraction_C %.2f;\n',LD_ZIP(i,2));
-%         fprintf (fid,'\t impedance_fraction_C %.2f;\n',LD_ZIP(i,1));
+        fprintf (fid,'\tpower_fraction_%s %.2f;\n',phase(ph),LD_ZIP(i,3));
+        fprintf (fid,'\tcurrent_fraction_%s %.2f;\n',phase(ph),LD_ZIP(i,2));
+        fprintf (fid,'\timpedance_fraction_%s %.2f;\n',phase(ph),LD_ZIP(i,1));
     end
     
-    if (length(low_voltage_nodes)>0)
+    if (~isempty(low_voltage_nodes))
         element_index= find(strcmp(low_voltage_nodes(:,1),LDSect_Node(i,3)));
     else
         element_index=[];
     end
     if (length(element_index)==1) 
         voltage  = low_voltage_nodes_volt(element_index,1);
-        fprintf (fid,'\t nominal_voltage %.2f;\n',voltage);% change voltage  
+        fprintf (fid,'\tnominal_voltage %.2f;\n',voltage);% change voltage  
     else
-    fprintf (fid,'\t nominal_voltage %.2f;\n',NonimalVolt);
+    fprintf (fid,'\tnominal_voltage %.2f;\n',NonimalVolt);
     end 
     fprintf(fid,'}\n\n\n');
     

@@ -1,14 +1,14 @@
 %% Configuration with impedance model
 
-function making_OH_Line_Configuration(dir_name,FeederName,glm_dir_name,conf_OH_name,conf_OH_phases)
+function making_OH_Line_Configuration(conductors_config,FeederName,glm_dir_name,conf_OH_name,conf_OH_phases)
 
 %load(strcat(FeederName,'_Feeder_OH_lines.mat'));
-[Conductor_Data,Conductor_type]=xlsread(strcat(dir_name,'\','conductor_warehouse.xlsx'));
+% [Conductor_Data,Conductor_type]=xlsread(strcat(dir_name,'\','conductor_warehouse.xlsx'));
 
-Conductor_type(2:end,1)=num2cell(Conductor_Data(:,1));
-Conductor_type(2:end,4:13)=num2cell(Conductor_Data(:,4:13));
-
-GlmFileName=strcat(glm_dir_name,'\','OH_Line_Configuration_',FeederName,'.glm')
+% Conductor_type(2:end,1)=num2cell(Conductor_Data(:,1));
+% Conductor_type(2:end,4:13)=num2cell(Conductor_Data(:,4:13));
+Conductor_type = conductors_config;
+GlmFileName=strcat(glm_dir_name,'\','OH_Line_Configuration_',FeederName,'.glm');
 fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Overhead  Line configuration for ',FeederName,':%s\n\n\n'),'');
 
@@ -21,10 +21,10 @@ for m=1:length(row_index)
     fprintf(fid,'object line_configuration {\n');
     fprintf(fid,'\t name overhead_line_config_%s;\n',char(conf_OH_name(row_index(m))));
     
-    Rpos=Conductor_type(conf_OH_phases(row_index(m))+1,5);
-    Xpos=Conductor_type(conf_OH_phases(row_index(m))+1,6);
-    Rzero=Conductor_type(conf_OH_phases(row_index(m))+1,8);
-    Xzero=Conductor_type(conf_OH_phases(row_index(m))+1,9);
+    Rpos=Conductor_type(conf_OH_phases(row_index(m)),5);
+    Xpos=Conductor_type(conf_OH_phases(row_index(m)),6);
+    Rzero=Conductor_type(conf_OH_phases(row_index(m)),8);
+    Xzero=Conductor_type(conf_OH_phases(row_index(m)),9);
     Zpos=cell2mat(Rpos)+cell2mat(Xpos)*sqrt(-1);
     Zzero=cell2mat(Rzero)+sqrt(-1)*cell2mat(Xzero);
     Zm=(Zzero-Zpos)/3;
