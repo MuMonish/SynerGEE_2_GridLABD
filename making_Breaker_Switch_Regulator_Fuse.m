@@ -11,26 +11,13 @@ SectionPhase=feeder_Section(:,5);
 [SectionsN,~]=size(feeder_Section);
 %% Switch   Starts
 disp('Switch Starts')
-%[SwitchMatrix,SwitchText]=xlsread(strcat(dir_name,'\',FeederName,'_Switches.xlsx'));
-%[SectionMatrix,SectionText]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
-%[SectionsN,~]=size(SectionMatrix);
 [SwitchN,~]=size(feeder_Switches);
 if SwitchN > 0
     SwitchOpen=cell2mat(feeder_Switches(:,5));    % Switch status
-%     SwitchOpen=SwitchMatrix(:,2);    % Switch status
     SwitchSectionID=feeder_Switches(:,1);% Use to find From and To Node
-%     SwithSectionID=SwitchText(2:end,1);% Use to find From and To Node
-    
-%     SectionPhaseIndex=5;         %5th Column for Phase
     SW_UniqID=feeder_Switches(:,2);
-%     SW_UniqID=SwitchText(2:end,2);
-    % Get SWitch SectionID-FromNode-ToNode-Phase
-
-
-%     SectionID=SectionText(2:end,1);
-%     FromNodeId=SectionText(2:end,3);
-%     ToNodeId=SectionText(2:end,4);
-%     SectionPhase=SectionText(2:end,5);
+    % Get Switch SectionID-FromNode-ToNode-Phase
+    
     SwitchSect_Node=cell(SwitchN,5);% create new node for switch
     SwitchSect_Node(:,1)=SwitchSectionID;
     
@@ -51,43 +38,23 @@ if SwitchN > 0
 end
 %% Regulator starts
 disp('Regulator Starts')
-
-%[RegConfigMatrix,RegConfigText]=xlsread(strcat(dir_name,'\','regulator_warehouse.xlsx'));
-%[RegulatorMatrix,RegulatorText]=xlsread(strcat(dir_name,'\',FeederName,'_Regulators.xlsx'));
-% feeder_Regulators
-% Regulators_config
-%[SectionMatrix,SectionText]=xlsread('3HT12F1_Section.xlsx');
 [RegulatorN,~]=size(feeder_Regulators);
 [RegConfigN,~]=size(Regulators_config);
-% [RegulatorN,~]=size(RegulatorMatrix);
-% [RegConfigN,~]=size(RegConfigMatrix);
 if RegConfigN > 0
     RegSectionID=feeder_Regulators(:,1);% Use to find From and To Node
-%     RegSectionID=RegulatorText(2:end,1);% Use to find From and To Node
-    %[SectionsN,Columns]=size(SectionMatrix);
-%     SectionPhaseIndex=5;         %5th Column for Phase
     RegType=feeder_Regulators(:,4);
     RegConnect=feeder_Regulators(:,14);
     RegCofigType=Regulators_config(:,1);
     Reg_UniqID=feeder_Regulators(:,2);
-%     RegType=RegulatorText(2:end,4);
-%     RegConnect=RegulatorText(2:end,14);
-%     RegCofigType=RegConfigText(2:end,1);
-%     Reg_UniqID=RegulatorText(2:end,2);
+    
     reg_ct_ratio = cell2mat(Regulators_config(:,10));
     reg_pt_ratio = cell2mat(Regulators_config(:,9));
-%     reg_ct_ratio = RegConfigMatrix(:,9);
-%     reg_pt_ratio = RegConfigMatrix(:,8);
     reg_RX_settings = cell2mat(feeder_Regulators(:,21:26));
     reg_tap_positions = cell2mat(feeder_Regulators(:,15:17));
     reg_BandCenter = cell2mat(feeder_Regulators(:,18));
     reg_BandWidth = cell2mat(feeder_Regulators(:,27));
     % Get SWitch SectionID-FromNode-ToNode-Phase
     
-%     SectionID=SectionText(2:end,1);
-%     FromNodeId=SectionText(2:end,3);
-%     ToNodeId=SectionText(2:end,4);
-%     SectionPhase=SectionText(2:end,SectionPhaseIndex);
     RegulatorSect_Node=cell(RegulatorN,7);%section, from node, to node, phase, config_N, cofig_name, New created node
     RegulatorSect_Node(:,1)=RegSectionID;
     
@@ -115,34 +82,20 @@ end
 
 %% Fuse Starts
 disp('Fuse Starts')
-%[FuseMatrix,FuseText]=xlsread(strcat(dir_name,'\',FeederName,'_Fuses.xlsx'));
-%[SectionMatrix,SectionText]=xlsread('3HT12F1_Section.xlsx');
-
 [FuseN,~]=size(feeder_Fuses);
-%[SectionsN,~]=size(SectionMatrix);
 if FuseN > 0
     FuseIsOpen=cell2mat(feeder_Fuses(:,17)); % Fuse status
     FuseCutoffAmp=cell2mat(feeder_Fuses(:,10));
     RepairHours=cell2mat(feeder_Fuses(:,22));
-%     FuseIsOpen=FuseMatrix(:,15); % Fuse status
-%     FuseCutoffAmp=FuseMatrix(:,8);
-%     RepairHours=FuseMatrix(:,20);
     mean_replacement_time = RepairHours*3600;
     
     FuseSectionID=feeder_Fuses(:,1);% Use to find From and To Node
     Fuse_UniqID=feeder_Fuses(:,2);
-%     FuseSectionID=FuseText(2:end,1);% Use to find From and To Node
-%     Fuse_UniqID=FuseText(2:end,2);
     % Get Fuses SectionID-FromNode-ToNode-Phase
     
-%     SectionID=SectionText(2:end,1);
-%     FromNodeId=SectionText(2:end,3);
-%     ToNodeId=SectionText(2:end,4);
-%     SectionPhase=SectionText(2:end,SectionPhaseIndex);
     FuseSect_Node=cell(FuseN,6);        %Create new nodes for serial fuses
     FuseSect_Node(:,1)=FuseSectionID;
     FuseSect_Node(:,5)=feeder_Fuses(:,11);
-%     FuseSect_Node(:,5)=FuseText(2:end,11);
     
     for m=1:FuseN
         for n=1:SectionsN
@@ -167,16 +120,11 @@ disp('Breakers Starts')
 [BreakerN,~]=size(feeder_Breakers);
 if BreakerN > 0
     BreakerOpen=cell2mat(feeder_Breakers(:,47)); % Column 47 is 1 if open
-%     BreakerOpen=BreakerMatrix(:,45); % Column 45 is 1 if open
     BreakerSect_Node=cell(BreakerN,6);        %Create new nodes for serial breakers
     BreakerSect_Node(:,5)=feeder_Breakers(:,44);
     Breaker_UniqID=feeder_Breakers(:,2);
     BreakerSectionID=feeder_Breakers(:,1);
     BreakerSect_Node(:,1)=BreakerSectionID;
-%     BreakerSect_Node(:,5)=BreakerText(2:end,44);
-%     Breaker_UniqID=BreakerText(2:end,2);
-%     BreakerSectionID=BreakerText(2:end,1);
-    
     % Make sure each Breaker_uniqID is unique
     if length(Breaker_UniqID) > length(unique(Breaker_UniqID))
         for i = 1:length(Breaker_UniqID)
@@ -194,7 +142,6 @@ if BreakerN > 0
         for n=1:SectionsN
             if strcmp(feeder_Breakers(m,1),SectionID(n))
                 BreakerSect_Node(m,1)=feeder_Breakers(m,1);
-%                 BreakerSect_Node(m,1)=BreakerText(m+1,1);
                 BreakerSect_Node(m,2)=FromNodeId(n);
                 BreakerSect_Node(m,3)=ToNodeId(n);
                 BreakerSect_Node(m,4)=SectionPhase(n);
@@ -212,35 +159,18 @@ end
 
 %% Transformers Starts
 disp('Transformers Starts')
-% [XfmrConfigMatrix,XfmrConfigText]=xlsread(strcat(dir_name,'\','transformer_warehouse.xlsx'));
-% [XfmrMatrix,XfmrText]=xlsread(strcat(dir_name,'\',FeederName,'_PrimaryTransformers.xlsx'));%xlsread('3HT12F1_Switches.xlsx');
-% Transformers_config
-% feeder_Xfmrs
 XfmrConfigMatrix = cell2mat(Transformers_config(:,2:10));
 [XfmrN,~]=size(feeder_Xfmrs);
 [XfmrConfigN,~]=size(Transformers_config);
 if XfmrN > 0
-    %[SectionsN,Columns]=size(SectionMatrix);
     XfmrType=feeder_Xfmrs(:,4);
     XfmrConnect_high=feeder_Xfmrs(:,12);
     XfmrConnect_low=feeder_Xfmrs(:,13);
     XfmrCofigType=Transformers_config(:,1);
     Xfmr_UniqID=feeder_Xfmrs(:,2);
     XfmrSectionID=feeder_Xfmrs(:,1);% Use to find From and To Node
-%     XfmrType=XfmrText(2:end,4);
-%     XfmrConnect_high=XfmrText(2:end,12);
-%     XfmrConnect_low=XfmrText(2:end,13);
-%     XfmrCofigType=XfmrConfigText(2:end,1);
-%     Xfmr_UniqID=XfmrText(2:end,2);
-%     XfmrSectionID=XfmrText(2:end,1);% Use to find From and To Node
-    
-    
     % Get SWitch SectionID-FromNode-ToNode-Phase
     
-%     SectionID=SectionText(2:end,1);
-%     FromNodeId=SectionText(2:end,3);
-%     ToNodeId=SectionText(2:end,4);
-%     SectionPhase=SectionText(2:end,SectionPhaseIndex);
     XfmrSect_Node=cell(XfmrN,7);%section, from node, to node, phase, config_N, cofig_name, New created node
     XfmrSect_Node(:,1)=XfmrSectionID;
     
@@ -389,171 +319,27 @@ if SwitchN > 0
         fprintf(fid,'\tphases %s;\n',strrep(char(SwitchSect_Node(i,4)),' ',''));
         fprintf(fid,'\tfrom %s;\n',char(SwitchSect_Node(i,2)));
         fprintf(fid,'\tto %s;\n',char(SwitchSect_Node(i,5)));%% TO NEW CREATED NODE
-        if strcmp(SwitchSect_Node(i,4),'ABCN')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_A_state OPEN;\n'); %***Original state is OPEN if switchOpen==1
-                fprintf(fid,'\tphase_B_state OPEN;\n');
-                fprintf(fid,'\tphase_C_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_A_state CLOSED;\n');
-                fprintf(fid,'\tphase_B_state CLOSED;\n');
-                fprintf(fid,'\tphase_C_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'ABC')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_A_state OPEN;\n'); %***Original state is OPEN if switchOpen==1
-                fprintf(fid,'\tphase_B_state OPEN;\n');
-                fprintf(fid,'\tphase_C_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_A_state CLOSED;\n');
-                fprintf(fid,'\tphase_B_state CLOSED;\n');
-                fprintf(fid,'\tphase_C_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'ABN')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_A_state OPEN;\n'); %***Original state is OPEN if switchOpen==1
-                fprintf(fid,'\tphase_B_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_A_state CLOSED;\n');
-                fprintf(fid,'\tphase_B_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'AB')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_A_state OPEN;\n'); %***Original state is OPEN if switchOpen==1
-                fprintf(fid,'\tphase_B_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_A_state CLOSED;\n');
-                fprintf(fid,'\tphase_B_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'ACN')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_A_state OPEN;\n');
-                fprintf(fid,'\tphase_C_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_A_state CLOSED;\n');
-                fprintf(fid,'\tphase_C_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'AC')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_A_state OPEN;\n');
-                fprintf(fid,'\tphase_C_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_A_state CLOSED;\n');
-                fprintf(fid,'\tphase_C_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'BCN')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_B_state OPEN;\n');
-                fprintf(fid,'\tphase_C_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_B_state CLOSED;\n');
-                fprintf(fid,'\tphase_C_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'BC')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_B_state OPEN;\n');
-                fprintf(fid,'\tphase_C_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_B_state CLOSED;\n');
-                fprintf(fid,'\tphase_C_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'AN')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_A_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_A_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'A')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_A_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_A_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'BN')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_B_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_B_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'B')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_B_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_B_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'CN')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_C_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_C_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
-        elseif strcmp(cellstr(SwitchSect_Node(i,4)),'C')
-            if (SwitchOpen(i) == 1) && (~AllClosed)
-                fprintf(fid,'\tphase_C_state OPEN;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            else
-                fprintf(fid,'\tphase_C_state CLOSED;\n');
-                fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
-                fprintf(fid,'}\n');
-            end
+        if (SwitchOpen(i) == 1) && (~AllClosed)
+            state = 'Open';
+        else
+            state = 'CLOSED';
         end
+        
+        if ismember('A',char(SwitchSect_Node(i,4)))
+            fprintf(fid,'\tphase_A_state %s;\n',state);
+        end
+        if ismember('B',char(SwitchSect_Node(i,4)))
+            fprintf(fid,'\tphase_B_state %s;\n',state);
+        end
+        if ismember('C',char(SwitchSect_Node(i,4)))
+            fprintf(fid,'\tphase_C_state %s;\n',state);
+        end
+        fprintf(fid,'\toperating_mode INDIVIDUAL;\n');
+        fprintf(fid,'}\n');
     end
     
     fprintf(fid,strcat('//**End Switches_',FeederName,'** %s \n\n\n'));
-  
+    
     % save Switches_Closed;
 end
 %% Print out Regulator

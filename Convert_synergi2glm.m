@@ -193,7 +193,7 @@ if contains_breakers || contains_regulators || contains_fuses || contains_switch
     disp('Making breakers, regulators, fuses, switches, xfmrs')
    SecFromTo = making_Breaker_Switch_Regulator_Fuse(feeder_Section,feeder_Switches,feeder_Regulators,Regulators_config,feeder_Fuses,feeder_Breakers,feeder_Xfmrs,Transformers_config,Feedername,NominalVolt,glm_dir_name, AllClosed);
 end
-% nodes
+% Nodes
 disp('Making nodes')
 [low_voltage_nodes, low_voltage_nodes_volt]=making_nodes(feeder_Section,Feedername,NominalVolt,glm_dir_name,SecFromTo);
 % Large Customer Loads
@@ -228,4 +228,3 @@ making_header(Feedername,glm_dir_name,contains_UG);
 
 clearvars
 end
-
