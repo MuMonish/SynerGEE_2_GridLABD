@@ -1,6 +1,6 @@
 clc
 clearvars
-AllClosed = false;
+AllClosed = true;
 databaseName = '20120206_Pullman - Edited';
 conn_warehouse = database('Warehouse','','');
 conn_model = database(databaseName,'','');

@@ -74,6 +74,20 @@ if length(row) < 1
 else
     contains_switches = true;
 end
+
+%% Query for Sectionalizers
+selectquery = 'SELECT * FROM InstSectionalizers';
+curs = exec(conn_model,selectquery);
+curs = fetch(curs);
+Sectionalizers = curs.Data;
+%Switches = select(conn,selectquery);
+row = find(ismember(Sectionalizers(:,1),feeder_sectionId));
+feeder_Sectionalizers = Sectionalizers(row,:);
+if length(row) < 1
+    contains_sectionalizers = false;
+else
+    contains_sectionalizers = true;
+end
 %% Query for Breakers
 selectquery = 'SELECT * FROM InstBreakers';
 curs = exec(conn_model,selectquery);
@@ -189,9 +203,9 @@ if contains_caps
     making_Cap(feeder_Section,feeder_Capacitor,Feedername,NominalVolt,glm_dir_name); 
 end
 % breakers regulators fuses switches transformers
-if contains_breakers || contains_regulators || contains_fuses || contains_switches || contains_Xfmrs
-    disp('Making breakers, regulators, fuses, switches, xfmrs')
-   SecFromTo = making_Breaker_Switch_Regulator_Fuse(feeder_Section,feeder_Switches,feeder_Regulators,Regulators_config,feeder_Fuses,feeder_Breakers,feeder_Xfmrs,Transformers_config,Feedername,NominalVolt,glm_dir_name, AllClosed);
+if contains_breakers || contains_regulators || contains_fuses || contains_switches || contains_Xfmrs || contains_sectionalizers
+    disp('Making breakers, regulators, fuses, switches, sectionalizers, xfmrs')
+   SecFromTo = making_Breaker_Switch_Regulator_Fuse(feeder_Section,feeder_Switches,feeder_Sectionalizers,feeder_Regulators,Regulators_config,feeder_Fuses,feeder_Breakers,feeder_Xfmrs,Transformers_config,Feedername,NominalVolt,glm_dir_name, AllClosed);
 end
 % Nodes
 disp('Making nodes')

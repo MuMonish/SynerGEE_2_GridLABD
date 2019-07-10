@@ -2,7 +2,7 @@
 %*******Assume all switches and fuses are in "closed and good status"******
 % Assume all closed?
 % Gridlab-D will produce errors if the feeder has sections islanded by open switches.
-function SecFromTo=making_Breaker_Switch_Regulator_Fuse(feeder_Section,feeder_Switches,feeder_Regulators,Regulators_config,feeder_Fuses,feeder_Breakers,feeder_Xfmrs,Transformers_config,FeederName,NonimalVolt,glm_dir_name,AllClosed)
+function SecFromTo=making_Breaker_Switch_Regulator_Fuse(feeder_Section,feeder_Switches,feeder_Sectionalizers,feeder_Regulators,Regulators_config,feeder_Fuses,feeder_Breakers,feeder_Xfmrs,Transformers_config,FeederName,NonimalVolt,glm_dir_name,AllClosed)
 SectionID=feeder_Section(:,1);
 FromNodeId=feeder_Section(:,3);
 ToNodeId=feeder_Section(:,4);
@@ -14,13 +14,14 @@ disp('Switch Starts')
 [SwitchN,~]=size(feeder_Switches);
 if SwitchN > 0
     SwitchOpen=cell2mat(feeder_Switches(:,5));    % Switch status
+    SwitchNearFromNode = cell2mat(feeder_Switches(:,4)); % device located at 'from' end?
     SwitchSectionID=feeder_Switches(:,1);% Use to find From and To Node
     SW_UniqID=feeder_Switches(:,2);
     % Get Switch SectionID-FromNode-ToNode-Phase
     
-    SwitchSect_Node=cell(SwitchN,5);% create new node for switch
+    SwitchSect_Node=cell(SwitchN,6);% create new node for switch
     SwitchSect_Node(:,1)=SwitchSectionID;
-    
+    SwitchSect_Node(:,6)=feeder_Switches(:,4);
     
     for m=1:SwitchN
         for n=1:SectionsN
@@ -36,12 +37,45 @@ if SwitchN > 0
         
     end
 end
+%% Sectionalizer   Starts
+disp('Sectionalizer Starts')
+[SectionalizerN,~]=size(feeder_Sectionalizers);
+if SectionalizerN > 0
+    SectionalizerOpen=cell2mat(feeder_Sectionalizers(:,12));    % Switch status
+    SectionalizerNearFromNode = cell2mat(feeder_Sectionalizers(:,3)); % device located at 'from' end?
+    SectionalizerSectionID=feeder_Sectionalizers(:,1);% Use to find From and To Node
+    Sectionalizer_UniqID=feeder_Sectionalizers(:,2);
+    % Get Sectionalizer SectionID-FromNode-ToNode-Phase
+    
+    SectionalizerSect_Node=cell(SectionalizerN,6);% create new node for switch
+    SectionalizerSect_Node(:,1)=SectionalizerSectionID;
+    SectionalizerSect_Node(:,6)=feeder_Sectionalizers(:,3);
+    
+    for m=1:SectionalizerN
+        for n=1:SectionsN
+            if strcmp(SectionalizerSectionID(m),SectionID(n))
+                SectionalizerSect_Node(m,2)=FromNodeId(n);
+                SectionalizerSect_Node(m,3)=ToNodeId(n);
+                SectionalizerSect_Node(m,4)=SectionPhase(n);
+                %create new nodes for sectionalizers
+                if SectionalizerNearFromNode(m)
+                    SectionalizerSect_Node(m,5)={strcat('Sectionalizer_',char(FromNodeId(n)))};% BASED ON FROM NODE
+                else
+                    SectionalizerSect_Node(m,5)={strcat('Sectionalizer_',char(ToNodeId(n)))};% BASED ON To NODE
+                end
+                break;
+            end
+        end
+        
+    end
+end
 %% Regulator starts
 disp('Regulator Starts')
 [RegulatorN,~]=size(feeder_Regulators);
 [RegConfigN,~]=size(Regulators_config);
 if RegConfigN > 0
     RegSectionID=feeder_Regulators(:,1);% Use to find From and To Node
+    RegNearFromNode = cell2mat(feeder_Regulators(:,6)); % device located at 'from' end?
     RegType=feeder_Regulators(:,4);
     RegConnect=feeder_Regulators(:,14);
     RegCofigType=Regulators_config(:,1);
@@ -77,7 +111,7 @@ if RegConfigN > 0
         
     end
     
-    Reg_NewNode=[RegulatorSect_Node(:,1:4),RegulatorSect_Node(:,7)];
+    Reg_NewNode=[RegulatorSect_Node(:,1:4),RegulatorSect_Node(:,7),RegNearFromNode];
 end
 
 %% Fuse Starts
@@ -88,6 +122,7 @@ if FuseN > 0
     FuseCutoffAmp=cell2mat(feeder_Fuses(:,10));
     RepairHours=cell2mat(feeder_Fuses(:,22));
     mean_replacement_time = RepairHours*3600;
+    FuseNearFromNode = cell2mat(feeder_Fuses(:,3)); % device located at 'from' end?
     
     FuseSectionID=feeder_Fuses(:,1);% Use to find From and To Node
     Fuse_UniqID=feeder_Fuses(:,2);
@@ -112,7 +147,7 @@ if FuseN > 0
         
     end
     
-    Fuse_NewNode=[FuseSect_Node(:,1:4),FuseSect_Node(:,6)];
+    Fuse_NewNode=[FuseSect_Node(:,1:4),FuseSect_Node(:,6),feeder_Fuses(:,3)];
 end
 %% Breakers Starts
 disp('Breakers Starts')
@@ -125,6 +160,7 @@ if BreakerN > 0
     Breaker_UniqID=feeder_Breakers(:,2);
     BreakerSectionID=feeder_Breakers(:,1);
     BreakerSect_Node(:,1)=BreakerSectionID;
+    BreakerNearFromNode = cell2mat(feeder_Breakers(:,3)); % device located at 'from' end?
     % Make sure each Breaker_uniqID is unique
     if length(Breaker_UniqID) > length(unique(Breaker_UniqID))
         for i = 1:length(Breaker_UniqID)
@@ -154,7 +190,7 @@ if BreakerN > 0
         
     end
     
-    Breaker_NewNode=[BreakerSect_Node(:,1:4),BreakerSect_Node(:,6)];
+    Breaker_NewNode=[BreakerSect_Node(:,1:4),BreakerSect_Node(:,6),feeder_Breakers(:,3)];
 end
 
 %% Transformers Starts
@@ -169,6 +205,7 @@ if XfmrN > 0
     XfmrCofigType=Transformers_config(:,1);
     Xfmr_UniqID=feeder_Xfmrs(:,2);
     XfmrSectionID=feeder_Xfmrs(:,1);% Use to find From and To Node
+    XfmrNearFromNode = cell2mat(feeder_Xfmrs(:,6)); % device located at 'from' end?
     % Get SWitch SectionID-FromNode-ToNode-Phase
     
     XfmrSect_Node=cell(XfmrN,7);%section, from node, to node, phase, config_N, cofig_name, New created node
@@ -191,7 +228,7 @@ if XfmrN > 0
             
         end
     end
-    Xfmr_NewNode=[XfmrSect_Node(:,1:4),XfmrSect_Node(:,7)];
+    Xfmr_NewNode=[XfmrSect_Node(:,1:4),XfmrSect_Node(:,7),feeder_Xfmrs(:,6)];
 end
 
 %% Count duplicate Section ID-------Two or Three components may be in the same section
@@ -203,6 +240,9 @@ if BreakerN > 0
 end
 if SwitchN > 0
     SectionAll = [SectionAll; SwitchSect_Node(:,1)];
+end
+if SectionalizerN > 0
+    SectionAll = [SectionAll; SectionalizerSect_Node(:,1)];
 end
 if RegulatorN > 0
     SectionAll = [SectionAll; RegulatorSect_Node(:,1)];
@@ -246,6 +286,9 @@ end
 if SwitchN > 0
     SecFromTo = [SecFromTo; SwitchSect_Node];
 end
+if SectionalizerN > 0
+    SecFromTo = [SecFromTo; SectionalizerSect_Node];
+end
 if RegulatorN > 0
     SecFromTo = [SecFromTo; Reg_NewNode];
 end
@@ -265,7 +308,7 @@ for m=1:DupSectN
     end
     % Section Duplicated Index
 end
-%% adding Nomial Voltage as another element in the matrix
+%% adding Nominal Voltage as another element in the matrix
 SecFromTo(:,size(SecFromTo,2)+1) = num2cell(NonimalVolt*ones(size(SecFromTo,1),1));
 %%
 %PRINT OUT
@@ -342,6 +385,55 @@ if SwitchN > 0
     
     % save Switches_Closed;
 end
+
+%% Print Sectionalizers
+disp('Print Sectionalizers')
+if SectionalizerN > 0
+    SectionalizerSect_Node(:,2)=SecFromTo(BreakerN+SwitchN+1:BreakerN+SwitchN+SectionalizerN,2);
+%     GlmFileName=strcat(glm_dir_name,'\','Sectionalizers_',FeederName,'.glm');
+    if AllClosed
+        GlmFileName=strcat(glm_dir_name,'\','Sectionalizers_',FeederName,'_Closed.glm');
+    else
+        GlmFileName=strcat(glm_dir_name,'\','Sectionalizers_',FeederName,'_O-C.glm'); %'_O-C' tells making_header not to include it
+    end
+    fid = fopen(GlmFileName,'wt');
+    fprintf(fid,strcat('//**Sectionalizers_',FeederName,':%s\n\n\n'),'');
+    
+    for i=1:SectionalizerN
+        %Sectionalizer
+        fprintf(fid,'object sectionalizer {\n');
+        fprintf(fid,'\tname Sectionalizer_%s;\n',char(Sectionalizer_UniqID(i)));
+        fprintf(fid,'\tphases %s;\n',strrep(char(SectionalizerSect_Node(i,4)),' ',''));
+        if SectionalizerNearFromNode(i)
+            fprintf(fid,'\tfrom %s;\n',char(SectionalizerSect_Node(i,2)));
+            fprintf(fid,'\tto %s;\n',char(SectionalizerSect_Node(i,5)));%% TO NEW CREATED NODE
+        else
+            fprintf(fid,'\tfrom %s;\n',char(SectionalizerSect_Node(i,5)));%% TO NEW CREATED NODE
+            fprintf(fid,'\tto %s;\n',char(SectionalizerSect_Node(i,2)));
+        end
+        if (SectionalizerOpen(i) == 1) && (~AllClosed)
+            state = 'OPEN';
+        else
+            state = 'CLOSED';
+        end
+        
+        if ismember('A',char(SectionalizerSect_Node(i,4)))
+            fprintf(fid,'\tphase_A_state %s;\n',state);
+        end
+        if ismember('B',char(SectionalizerSect_Node(i,4)))
+            fprintf(fid,'\tphase_B_state %s;\n',state);
+        end
+        if ismember('C',char(SectionalizerSect_Node(i,4)))
+            fprintf(fid,'\tphase_C_state %s;\n',state);
+        end
+        fprintf(fid,'\toperating_mode BANKED;\n');
+        fprintf(fid,'}\n');
+    end
+    
+    fprintf(fid,strcat('//**End Sectionalizers_',FeederName,'** %s \n\n\n'));
+    
+end
+
 %% Print out Regulator
 disp('Print Regulator')
 if RegulatorN > 0
@@ -401,7 +493,7 @@ if RegulatorN > 0
     end
     
     % Object Regulator Change to NEW From Node
-    RegulatorSect_Node(:,2)=SecFromTo(BreakerN+SwitchN+1:BreakerN+SwitchN+RegulatorN,2);
+    RegulatorSect_Node(:,2)=SecFromTo(BreakerN+SwitchN+SectionalizerN+1:BreakerN+SwitchN+SectionalizerN+RegulatorN,2);
     
     for i=1:RegulatorN
         %Switch
@@ -469,7 +561,7 @@ if XfmrN > 0
     end
     
     % Object Regulator Change to NEW From Node
-    XfmrSect_Node(:,2)=SecFromTo(BreakerN+SwitchN+RegulatorN+FuseN+1:BreakerN+SwitchN+RegulatorN+FuseN+XfmrN,2);
+    XfmrSect_Node(:,2)=SecFromTo(BreakerN+SwitchN+SectionalizerN+RegulatorN+FuseN+1:BreakerN+SwitchN+SectionalizerN+RegulatorN+FuseN+XfmrN,2);
     
     for i=1:XfmrN
         %Switch
@@ -492,7 +584,7 @@ end
 %% Print Fuses
 disp('Print Fuses')
 if FuseN > 0
-    FuseSect_Node(:,2)=SecFromTo(BreakerN+SwitchN+RegulatorN+1:BreakerN+SwitchN+RegulatorN+FuseN,2);
+    FuseSect_Node(:,2)=SecFromTo(BreakerN+SwitchN+SectionalizerN+RegulatorN+1:BreakerN+SwitchN+SectionalizerN+RegulatorN+FuseN,2);
     if AllClosed
         GlmFileName_fuse=strcat(glm_dir_name,'\','Fuses_',FeederName,'_Closed.glm');
     else
@@ -537,11 +629,12 @@ if FuseN > 0
     % save Fuses_Good;
 end
 
-%% Order =  Transfomer -> FuseN -> RegulatorN -> SwitchN -> BreakerN
+%% Order =  Transfomer -> FuseN -> RegulatorN -> SectionalizerN -> SwitchN -> BreakerN
 SecFromto_ordered=[
-    SecFromTo(BreakerN+SwitchN+RegulatorN+FuseN+1:BreakerN+SwitchN+RegulatorN+FuseN+XfmrN,:);
-    SecFromTo(BreakerN+SwitchN+RegulatorN+1:BreakerN+SwitchN+RegulatorN+FuseN,:);
-    SecFromTo(BreakerN+SwitchN+1:BreakerN+SwitchN+RegulatorN,:);
+    SecFromTo(BreakerN+SwitchN+SectionalizerN+RegulatorN+FuseN+1:BreakerN+SwitchN+SectionalizerN+RegulatorN+FuseN+XfmrN,:);
+    SecFromTo(BreakerN+SwitchN+SectionalizerN+RegulatorN+1:BreakerN+SwitchN+SectionalizerN+RegulatorN+FuseN,:);
+    SecFromTo(BreakerN+SwitchN+SectionalizerN+1:BreakerN+SwitchN+SectionalizerN+RegulatorN,:);
+    SecFromTo(BreakerN+SwitchN+1:BreakerN+SwitchN+SectionalizerN,:);
     SecFromTo(BreakerN+1:BreakerN+SwitchN,:);
     SecFromTo(1:BreakerN,:)
     ];
