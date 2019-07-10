@@ -57,12 +57,13 @@ if SectionalizerN > 0
                 SectionalizerSect_Node(m,2)=FromNodeId(n);
                 SectionalizerSect_Node(m,3)=ToNodeId(n);
                 SectionalizerSect_Node(m,4)=SectionPhase(n);
+                SectionalizerSect_Node(m,5)={strcat('SCZ_',char(FromNodeId(n)))};% BASED ON FROM NODE
                 %create new nodes for sectionalizers
-                if SectionalizerNearFromNode(m)
-                    SectionalizerSect_Node(m,5)={strcat('Sectionalizer_',char(FromNodeId(n)))};% BASED ON FROM NODE
-                else
-                    SectionalizerSect_Node(m,5)={strcat('Sectionalizer_',char(ToNodeId(n)))};% BASED ON To NODE
-                end
+%                 if SectionalizerNearFromNode(m)
+%                     SectionalizerSect_Node(m,5)={strcat('SCZ_',char(FromNodeId(n)))};% BASED ON FROM NODE
+%                 else
+%                     SectionalizerSect_Node(m,5)={strcat('SCZ_',char(ToNodeId(n)))};% BASED ON TO NODE
+%                 end
                 break;
             end
         end
@@ -404,13 +405,16 @@ if SectionalizerN > 0
         fprintf(fid,'object sectionalizer {\n');
         fprintf(fid,'\tname Sectionalizer_%s;\n',char(Sectionalizer_UniqID(i)));
         fprintf(fid,'\tphases %s;\n',strrep(char(SectionalizerSect_Node(i,4)),' ',''));
-        if SectionalizerNearFromNode(i)
-            fprintf(fid,'\tfrom %s;\n',char(SectionalizerSect_Node(i,2)));
-            fprintf(fid,'\tto %s;\n',char(SectionalizerSect_Node(i,5)));%% TO NEW CREATED NODE
-        else
-            fprintf(fid,'\tfrom %s;\n',char(SectionalizerSect_Node(i,5)));%% TO NEW CREATED NODE
-            fprintf(fid,'\tto %s;\n',char(SectionalizerSect_Node(i,2)));
-        end
+        
+        fprintf(fid,'\tfrom %s;\n',char(SectionalizerSect_Node(i,2)));
+        fprintf(fid,'\tto %s;\n',char(SectionalizerSect_Node(i,5)));%% TO NEW CREATED NODE
+%         if SectionalizerNearFromNode(i)
+%             fprintf(fid,'\tfrom %s;\n',char(SectionalizerSect_Node(i,2)));
+%             fprintf(fid,'\tto %s;\n',char(SectionalizerSect_Node(i,5)));%% TO NEW CREATED NODE
+%         else
+%             fprintf(fid,'\tfrom %s;\n',char(SectionalizerSect_Node(i,5)));%% TO NEW CREATED NODE
+%             fprintf(fid,'\tto %s;\n',char(SectionalizerSect_Node(i,2)));
+%         end
         if (SectionalizerOpen(i) == 1) && (~AllClosed)
             state = 'OPEN';
         else
