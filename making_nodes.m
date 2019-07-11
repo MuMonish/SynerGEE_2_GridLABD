@@ -1,6 +1,8 @@
 
-function [low_voltage_nodes, low_voltage_nodes_volt]=making_nodes(feeder_Section,FeederName,NonimalVolt,glm_dir_name,SecFromTo)
-
+function [low_voltage_nodes, low_voltage_nodes_volt, nodes]=making_nodes(feeder_Section,FeederName,NonimalVolt,glm_dir_name,SecFromTo, exclude_nodes)
+if nargin <6
+    exclude_nodes = cell(0);
+end
 %load(strcat(FeederName,'_SectionFromTo.mat'));
 %load('SectionFromTo.mat');
 % [Node_feeder,Node_feeder_text]=xlsread(strcat(dir_name,'\',FeederName,'_Section.xlsx'));
@@ -133,93 +135,49 @@ fid = fopen(GlmFileName,'wt');
 fprintf(fid,strcat('//**Nodes for',FeederName,':%s\n\n\n'),'');
 
 for i = 1:length(nodes)
-    fprintf (fid,'object node {\n');
-    fprintf (fid,'\t name %s;\n',char(nodes(i)));
-    fprintf (fid,'\t phases %s;\n',strrep(char(phases_nodes(i)),' ',''));
-    
-    if (~isempty(low_voltage_nodes))
-        element_index= find(strcmp(low_voltage_nodes(:,1),nodes(i)));
-    else
-        element_index=[];
-    end
-    if (length(element_index)==1) 
-        voltage  = low_voltage_nodes_volt(element_index,1);
-        fprintf (fid,'\t nominal_voltage %.2f;\n',voltage); %%   %%
-        if strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'ABCN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'ABC')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'ABN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);  
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'AB')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'ACN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);   
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'AC')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);    
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'BCN')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);  
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'BC')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);       
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'AN')
-                fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);       
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'BN')
-           fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);     
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'CN')
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);        
+    if ~ismember(nodes(i), exclude_nodes) 
+        fprintf (fid,'object node {\n');
+        fprintf (fid,'\t name %s;\n',char(nodes(i)));
+        fprintf (fid,'\t phases %s;\n',strrep(char(phases_nodes(i)),' ',''));
+
+        if (~isempty(low_voltage_nodes))
+            element_index= find(strcmp(low_voltage_nodes(:,1),nodes(i)));
+        else
+            element_index=[];
         end
-    else
-        fprintf (fid,'\t nominal_voltage %.2f;\n',NonimalVolt);
-        if strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'ABCN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'ABC')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);        
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'ABN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);       
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'AB')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);       
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'ACN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);      
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'AC')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);      
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'BCN')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);       
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'BC')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);        
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'AN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);      
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'BN')
-           fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);   
-        elseif strcmp(strrep(cellstr(phases_nodes(i)),' ',''),'CN')
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);     
+        if (length(element_index)==1) 
+            voltage  = low_voltage_nodes_volt(element_index,1);
+            fprintf (fid,'\t nominal_voltage %.2f;\n',voltage); %%   %%
+
+            if ismember('A', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
+            end
+            if ismember('B', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
+            end
+            if ismember('C', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
+            end
+
+        else
+            fprintf (fid,'\t nominal_voltage %.2f;\n',NonimalVolt);
+            if ismember('A', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
+            end
+            if ismember('B', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
+            end
+            if ismember('C', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
+            end
         end
+        if strcmp(cellstr(nodes(i)),FeederName)
+           fprintf(fid,'\t bustype SWING;\n');
+        else
+           fprintf(fid,'\t bustype PQ;\n');
+        end
+        fprintf(fid,'}\n\n\n'); 
     end
-    if strcmp(cellstr(nodes(i)),FeederName)
-       fprintf(fid,'\t bustype SWING;\n');
-    else
-       fprintf(fid,'\t bustype PQ;\n');
-    end
-    fprintf(fid,'}\n\n\n'); 
           
 end
 
@@ -233,93 +191,48 @@ nodes_new=ordered_SecFromTo(:,5);
 phase_new=ordered_SecFromTo(:,4);
 
 for i = 1:length(nodes_new)
-    fprintf (fid,'object node {\n');
-    fprintf (fid,'\t name %s;\n',char(nodes_new(i)));
-    fprintf (fid,'\t phases %s;\n',strrep(char(phase_new(i)),' ',''));
-    
-    if (length(low_voltage_nodes)>0)
-        element_index= find(strcmp(low_voltage_nodes(:,1),nodes_new(i)));
-    else
-        element_index=[];
-    end
-    if (length(element_index)==1) 
-        voltage  = low_voltage_nodes_volt(element_index,1);
-        fprintf (fid,'\t nominal_voltage %.2f;\n',voltage);
-        
-        if strcmp(strrep(cellstr(phase_new(i)),' ',''),'ABCN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'ABC')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'ABN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'AB')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'ACN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'AC')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'BCN')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'BC')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'AN')
-             fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'BN')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'CN')
-             fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
+    if ~ismember(nodes_new(i),exclude_nodes) 
+        fprintf (fid,'object node {\n');
+        fprintf (fid,'\t name %s;\n',char(nodes_new(i)));
+        fprintf (fid,'\t phases %s;\n',strrep(char(phase_new(i)),' ',''));
+
+        if (~isempty(low_voltage_nodes))
+            element_index= find(strcmp(low_voltage_nodes(:,1),nodes_new(i)));
+        else
+            element_index=[];
         end
-        
-    else
-        fprintf (fid,'\t nominal_voltage %.2f;\n',NonimalVolt);
-        if strcmp(strrep(cellstr(phase_new(i)),' ',''),'ABCN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'ABC')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'ABN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'AB')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'ACN')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'AC')
-            fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'BCN')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'BC')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-            fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'AN')
-             fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'BN')
-            fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
-        elseif strcmp(strrep(cellstr(phase_new(i)),' ',''),'CN')
-             fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
+        if (length(element_index)==1) 
+            voltage  = low_voltage_nodes_volt(element_index,1);
+            fprintf (fid,'\t nominal_voltage %.2f;\n',voltage);
+
+            if ismember('A', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_A %.2f+0d;\n',voltage);
+            end
+            if ismember('B', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_B %.2f-120.0d;\n',voltage);
+            end
+            if ismember('C', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_C %.2f+120.0d;\n',voltage);
+            end
+
+        else
+
+            fprintf (fid,'\t nominal_voltage %.2f;\n',NonimalVolt);
+            if ismember('A', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_A %.2f+0d;\n',NonimalVolt);
+            end
+            if ismember('B', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_B %.2f-120.0d;\n',NonimalVolt);
+            end
+            if ismember('C', char(phases_nodes(i)))
+                fprintf (fid,'\t voltage_C %.2f+120.0d;\n',NonimalVolt);
+            end
+
         end
-        
-    end
     
-    fprintf(fid,'\t bustype PQ;\n');
-    fprintf(fid,'}\n\n\n');
+        fprintf(fid,'\t bustype PQ;\n');
+        fprintf(fid,'}\n\n\n');
+    end
 end
 
 

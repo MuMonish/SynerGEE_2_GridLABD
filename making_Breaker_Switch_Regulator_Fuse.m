@@ -19,9 +19,9 @@ if SwitchN > 0
     SW_UniqID=feeder_Switches(:,2);
     % Get Switch SectionID-FromNode-ToNode-Phase
     
-    SwitchSect_Node=cell(SwitchN,6);% create new node for switch
+    SwitchSect_Node=cell(SwitchN,5);% create new node for switch
     SwitchSect_Node(:,1)=SwitchSectionID;
-    SwitchSect_Node(:,6)=feeder_Switches(:,4);
+    %SwitchSect_Node(:,6)=feeder_Switches(:,4);
     
     for m=1:SwitchN
         for n=1:SectionsN
@@ -47,9 +47,9 @@ if SectionalizerN > 0
     Sectionalizer_UniqID=feeder_Sectionalizers(:,2);
     % Get Sectionalizer SectionID-FromNode-ToNode-Phase
     
-    SectionalizerSect_Node=cell(SectionalizerN,6);% create new node for switch
+    SectionalizerSect_Node=cell(SectionalizerN,5);% create new node for switch
     SectionalizerSect_Node(:,1)=SectionalizerSectionID;
-    SectionalizerSect_Node(:,6)=feeder_Sectionalizers(:,3);
+    %SectionalizerSect_Node(:,6)=feeder_Sectionalizers(:,3);
     
     for m=1:SectionalizerN
         for n=1:SectionsN
@@ -57,7 +57,8 @@ if SectionalizerN > 0
                 SectionalizerSect_Node(m,2)=FromNodeId(n);
                 SectionalizerSect_Node(m,3)=ToNodeId(n);
                 SectionalizerSect_Node(m,4)=SectionPhase(n);
-                SectionalizerSect_Node(m,5)={strcat('SCZ_',char(FromNodeId(n)))};% BASED ON FROM NODE
+                SectionalizerSect_Node(m,5)={strcat('SCZ_',char(ToNodeId(n)))};
+%                 SectionalizerSect_Node(m,5)={strcat('SCZ_',char(FromNodeId(n)))};% BASED ON FROM NODE
                 %create new nodes for sectionalizers
 %                 if SectionalizerNearFromNode(m)
 %                     SectionalizerSect_Node(m,5)={strcat('SCZ_',char(FromNodeId(n)))};% BASED ON FROM NODE
@@ -112,7 +113,7 @@ if RegConfigN > 0
         
     end
     
-    Reg_NewNode=[RegulatorSect_Node(:,1:4),RegulatorSect_Node(:,7),RegNearFromNode];
+    Reg_NewNode=[RegulatorSect_Node(:,1:4),RegulatorSect_Node(:,7)];%,RegNearFromNode];
 end
 
 %% Fuse Starts
@@ -148,7 +149,7 @@ if FuseN > 0
         
     end
     
-    Fuse_NewNode=[FuseSect_Node(:,1:4),FuseSect_Node(:,6),feeder_Fuses(:,3)];
+    Fuse_NewNode=[FuseSect_Node(:,1:4),FuseSect_Node(:,6)];%,feeder_Fuses(:,3)];
 end
 %% Breakers Starts
 disp('Breakers Starts')
@@ -191,7 +192,7 @@ if BreakerN > 0
         
     end
     
-    Breaker_NewNode=[BreakerSect_Node(:,1:4),BreakerSect_Node(:,6),feeder_Breakers(:,3)];
+    Breaker_NewNode=[BreakerSect_Node(:,1:4),BreakerSect_Node(:,6)];%,feeder_Breakers(:,3)];
 end
 
 %% Transformers Starts
@@ -229,7 +230,7 @@ if XfmrN > 0
             
         end
     end
-    Xfmr_NewNode=[XfmrSect_Node(:,1:4),XfmrSect_Node(:,7),feeder_Xfmrs(:,6)];
+    Xfmr_NewNode=[XfmrSect_Node(:,1:4),XfmrSect_Node(:,7)];%,feeder_Xfmrs(:,6)];
 end
 
 %% Count duplicate Section ID-------Two or Three components may be in the same section
@@ -364,7 +365,7 @@ if SwitchN > 0
         fprintf(fid,'\tfrom %s;\n',char(SwitchSect_Node(i,2)));
         fprintf(fid,'\tto %s;\n',char(SwitchSect_Node(i,5)));%% TO NEW CREATED NODE
         if (SwitchOpen(i) == 1) && (~AllClosed)
-            state = 'Open';
+            state = 'OPEN';
         else
             state = 'CLOSED';
         end

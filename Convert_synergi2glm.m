@@ -1,4 +1,7 @@
-function Convert_synergi2glm(conn_model, conn_warehouse, Feedername, AllClosed)
+function [nodes] = Convert_synergi2glm(conn_model, conn_warehouse, Feedername, AllClosed, exclude_nodes)
+if nargin < 5
+    exclude_nodes = cell(0);
+end
 
 %Feedername = 'SPU125'
 %AllClosed = true
@@ -209,7 +212,7 @@ if contains_breakers || contains_regulators || contains_fuses || contains_switch
 end
 % Nodes
 disp('Making nodes')
-[low_voltage_nodes, low_voltage_nodes_volt]=making_nodes(feeder_Section,Feedername,NominalVolt,glm_dir_name,SecFromTo);
+[low_voltage_nodes, low_voltage_nodes_volt, nodes]=making_nodes(feeder_Section,Feedername,NominalVolt,glm_dir_name,SecFromTo,exclude_nodes);
 % Large Customer Loads
 if contains_Large_customers
     disp('Making large custormer loads')
@@ -240,5 +243,5 @@ end
 % making the main header glm file
 making_header(Feedername,glm_dir_name,contains_UG);
 
-clearvars
+
 end
